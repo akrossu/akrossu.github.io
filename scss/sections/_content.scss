@@ -1,0 +1,11 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+body {
+    @include gradient;
+    background-attachment: fixed;
+}
+
+.display-2 {
+    padding-inline: 8vw;
+}

@@ -1,0 +1,20 @@
+@use '../custom' as *;
+
+.line {
+    background: $brown;
+    position: absolute;
+    
+    &--top, &--bottom {
+        height: 3vh;
+    }
+
+    &--left, &--right {
+        top: 0;
+        height: 100vh;
+        width: 3vh;
+    }
+    
+    &--right {
+        right: 0;
+    }
+}

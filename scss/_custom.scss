@@ -1,0 +1,19 @@
+// Theme
+$dark-blue: #2B3A55;
+$accent-blue: #27274e;
+$dark-gray: #CE7777;
+$off-white: #F4F4F4;
+$brown: #F7D1BA;
+
+// Defaults
+$body-bg: $dark-blue;
+$body-color: $off-white;
+$primary: $dark-gray;
+$secondary: $brown;
+
+$navbar-dark-color: $off-white;
+
+$font-family-sans-serif: 'Roboto Mono', monospace;
+
+// Bootstrap scss import
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
