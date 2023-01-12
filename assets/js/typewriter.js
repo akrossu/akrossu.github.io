@@ -6,26 +6,30 @@ const phrases = [
 ];
 const element = document.getElementById('typewriter');
 
-let sleepTime = 100;
+let sleepTime = 50;
 let index = 0;
 let word;
 
 const writeLoop = async () => {
+    // Sleeps on initial load
+    await sleep(sleepTime * 10);
+    
     while (true) {
-        word = phrases[index];
-        
-        await sleep(sleepTime * 5);
+        word = phrases[index];    
 
         for (let i = 0; i < word.length; i++) {
             element.innerText = word.substring(0, i + 1);
+            // Speed of typed chars
             await sleep(sleepTime);
         }
 
-        await sleep(sleepTime * 15)
+        // While full await
+        await sleep(sleepTime * 20)
         
         for (let i = word.length; i > 0; i--) {
             element.innerText = word.substring(0, i - 1);
-            await sleep(sleepTime / 2);
+            // Speed of deleted chars
+            await sleep(sleepTime / 1.5);
         }
 
         if (index === phrases.length - 1) {
@@ -35,7 +39,8 @@ const writeLoop = async () => {
             index ++;
         }
 
-        await sleep(sleepTime * 5);
+        // While empty await 
+        await sleep(sleepTime * 12);
     }
 }
 
