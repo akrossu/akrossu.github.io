@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../components/mixin' as *;
+@use '../components/animations' as *;
 
 body {
     @include gradient;
@@ -8,4 +9,17 @@ body {
 
 .display-2 {
     padding-inline: 8vw;
+    
+    &--title {
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    #typewriter {
+        color: $brown;
+        padding-left: .8rem;
+    }
+    
+    #cursor {
+        animation: blink 1s linear infinite;
+    }
 }
