@@ -10792,6 +10792,7 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 .display-2--typewriter {
+  display: inline-block;
   font-size: 1rem;
 }
 .display-2--description {
@@ -10833,7 +10834,7 @@ textarea.form-control-lg {
   transform: scaleX(0);
   background: #CE7777;
   transform-origin: bottom left;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.23s ease-out;
 }
 .nav-item--resume:hover:after, .nav-item--portfolio:hover:after {
   transform: scaleX(1);
