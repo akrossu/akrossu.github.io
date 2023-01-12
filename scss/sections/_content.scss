@@ -14,12 +14,13 @@ body {
         font-family: 'Roboto Mono', monospace;
     }
 
-    #typewriter {
-        color: $brown;
-        padding-left: .8rem;
-    }
-    
-    #cursor {
-        animation: blink 1s linear infinite;
-    }
+}
+
+#typewriter {
+    color: $brown;
+    padding-left: .8rem;
+}
+
+#cursor {
+    animation: blink 1s linear infinite;
 }
