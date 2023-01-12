@@ -10863,11 +10863,13 @@ body {
 .display-2--title {
   font-family: "Roboto Mono", monospace;
 }
-.display-2 #typewriter {
+
+#typewriter {
   color: #F7D1BA;
   padding-left: 0.8rem;
 }
-.display-2 #cursor {
+
+#cursor {
   animation: blink 1s linear infinite;
 }
 
