@@ -15,7 +15,7 @@
         bottom: -10px;
         left: -4px;
         transform: scaleX(0);
-        background: $dark-gray ;
+        background: $salmon;
         transform-origin: bottom left;
         transition: transform 0.23s ease-out;
     }
@@ -30,10 +30,10 @@
         padding-inline: 20px;
         border-style: solid;
         border-width: 1px;
-        border-color: $dark-gray;
+        border-color: $salmon;
         transition: all .25s ease;
         &:hover {
-            background-color: $dark-gray;
+            background-color: $salmon;
         }
     }
 }
