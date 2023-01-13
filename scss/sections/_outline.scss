@@ -1,5 +1,26 @@
 @use '../custom' as *;
 
+@media only screen and (max-width: 991px) {
+    .line {
+        background: $brown;
+        position: absolute;
+        
+        &--top, &--bottom {
+            height: 3vh;
+        }
+    
+        &--left, &--right {
+            top: 0;
+            height: 100vh;
+            width: 1vh;
+        }
+        
+        &--right {
+            right: 0;
+        }
+    }
+}
+
 .line {
     background: $brown;
     position: absolute;
@@ -16,5 +37,14 @@
     
     &--right {
         right: 0;
+    }
+
+    @media (max-width: 991px) {
+        &--top, &--bottom {
+            height: 1.6vh;
+        }
+        &--left, &--right {
+            width: 1.6vh;
+        }
     }
 }
