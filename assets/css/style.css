@@ -6,10 +6,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
+  --bs-blue: #2B3A55;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #F7D1BA;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -70,7 +70,7 @@
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #CE7777;
   --bs-link-hover-color: #a55f5f;
-  --bs-code-color: #d63384;
+  --bs-code-color: #F7D1BA;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -10802,20 +10802,11 @@ textarea.form-control-lg {
 }
 
 @media only screen and (max-width: 991px) {
-  .line {
-    background: #F7D1BA;
-    position: absolute;
-  }
   .line--top, .line--bottom {
     height: 3vh;
   }
   .line--left, .line--right {
-    top: 0;
-    height: 100vh;
     width: 1vh;
-  }
-  .line--right {
-    right: 0;
   }
 }
 .line {
