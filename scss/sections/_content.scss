@@ -2,28 +2,58 @@
 @use '../components/mixin' as *;
 @use '../components/animations' as *;
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
 body {
     @include gradient;
     background-attachment: fixed;
 }
 
-.display-2 {
-    padding-inline: 8vw;
+.index {
+    .display-2 {
+        padding-inline: 8vw;
+        
+        &--title {
+            font-weight: 700;
+            font-family: 'Jetbrains Mono', monospace;
+        }
     
-    &--title {
-        font-family: 'Roboto Mono', monospace;
-    }
-
-    @media (max-width: 991px) {
-        padding-inline: 4vw;
+        @media (max-width: 991px) {
+            padding-inline: 4vw;
+        }
+        
+        #typewriter {
+            color: $pink;
+            padding-left: .8rem;
+        }
+        
+        #cursor {
+            animation: blink 1s linear infinite;
+        }
     }
 }
 
-#typewriter {
-    color: $pink;
-    padding-left: .8rem;
-}
+.resume {
+    // NAV Bar Width
+    margin-top: 14vh;
 
-#cursor {
-    animation: blink 1s linear infinite;
+    @media (min-width: 991px) {
+        .history {
+            padding-inline: 8vw;
+        }
+    }
+    .skill-sec {
+        width: 62vw;
+    }
+
+    .information {
+        .pfp {
+            border-radius: 100%;
+            max-width: 25vh;
+        }
+    }
+    
+    .skills {
+        background:rgba($color: #000000, $alpha: .4)
+    }
 }
