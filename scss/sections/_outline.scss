@@ -14,15 +14,15 @@
 
 .line {
     background: $pink;
-    position: absolute;
     
     &--top, &--bottom {
         height: 3vh;
     }
 
     &--left, &--right {
+        position:fixed;
         top: 0;
-        height: 100vh;
+        height: 100%;
         width: 3vh;
     }
     
