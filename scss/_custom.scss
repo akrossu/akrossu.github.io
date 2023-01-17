@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 // Theme
 $blue: #2B3A55;
@@ -15,7 +15,7 @@ $secondary: $pink;
 
 $navbar-dark-color: $off-white;
 
-$font-family-sans-serif: 'Roboto Mono', monospace;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
 
 // Bootstrap scss import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
