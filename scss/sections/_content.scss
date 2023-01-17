@@ -9,14 +9,19 @@ body {
     background-attachment: fixed;
 }
 
+.index, .resume {
+    .display-2 {
+        &--title {
+            font-weight: 600;
+            font-family: 'Jetbrains Mono', monospace;
+        }
+    }
+}
+
 .index {
     .display-2 {
         padding-inline: 8vw;
         
-        &--title {
-            font-weight: 700;
-            font-family: 'Jetbrains Mono', monospace;
-        }
     
         @media (max-width: 991px) {
             padding-inline: 4vw;
@@ -24,7 +29,7 @@ body {
         
         #typewriter {
             color: $pink;
-            padding-left: .8rem;
+            padding-left: .4rem;
         }
         
         #cursor {
