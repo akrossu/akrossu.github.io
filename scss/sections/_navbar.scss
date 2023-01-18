@@ -4,10 +4,12 @@
     margin: 5vh;
 }
 
+
+/* Nav items */
 .nav-item {
     padding-inline: 25px;
     
-    &--resume:after, &--portfolio:after {
+    &--home:after, &--resume:after, &--portfolio:after {
         content: '';
         position: absolute;
         width: 100%;
@@ -20,7 +22,7 @@
         transition: transform 0.23s ease-out;
     }
 
-    &--resume:hover:after, &--portfolio:hover:after {
+    &--home:hover:after, &--resume:hover:after, &--portfolio:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
     }
