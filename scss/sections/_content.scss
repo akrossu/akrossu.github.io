@@ -85,18 +85,29 @@ body {
             border-radius: .2rem;
         }
     }
-
-    
 }
 
 .contact {
-    @media (min-width: 991px) {
-        .row {
-            padding-inline: 8vw;
-        }
-    }
+    margin-top: 36vh;
 
     .email, .discord {
         background: rgba($color: #000000, $alpha: .4);
+    }
+}
+
+.portfolio {
+    @media (min-width: 991px) {
+        .card {
+            width: 70vw;
+        }
+    }
+    
+    .card {
+        border: none;
+        box-shadow: inset 0 0 0 2000px rgba($color: $black, $alpha: .8);
+
+        img {
+            border: 1px solid $primary;
+        }
     }
 }
