@@ -4,12 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 
+/* Visualization Test */
+.row {
+    // border: 1px solid white;
+    .col {
+        // border: 1px solid yellow;
+    }
+}
+
 body {
     @include gradient;
     background-attachment: fixed;
 }
 
-.index, .resume {
+.index, .resume, .portfolio, .contact {
     .display-2 {
         &--title {
             font-weight: 600;
@@ -21,7 +29,6 @@ body {
 .index {
     .display-2 {
         padding-inline: 8vw;
-        
     
         @media (max-width: 991px) {
             padding-inline: 4vw;
@@ -39,16 +46,21 @@ body {
 }
 
 .resume {
-    // NAV Bar Width
-    margin-top: 14vh;
-
+    @media (max-width: 991px) {
+        .skills {
+            min-width: 260px;
+        }
+        .history {
+            min-width: 260px;
+        }
+    }
     @media (min-width: 991px) {
+        .top-row {
+            padding-inline: 8vw;
+        }
         .history {
             padding-inline: 8vw;
         }
-    }
-    .skill-sec {
-        width: 62vw;
     }
 
     .information {
@@ -58,7 +70,33 @@ body {
         }
     }
     
+    .skill-sec {
+        width: 46vw;
+    }
+    
     .skills {
-        background:rgba($color: #000000, $alpha: .4)
+        background: rgba($color: $black, $alpha: .4);
+        
+        img {
+            margin-inline: .2rem;
+            margin-bottom: .4rem;
+            padding: .2rem;
+            border: 1px solid rgba($color: $primary, $alpha: .3);    
+            border-radius: .2rem;
+        }
+    }
+
+    
+}
+
+.contact {
+    @media (min-width: 991px) {
+        .row {
+            padding-inline: 8vw;
+        }
+    }
+
+    .email, .discord {
+        background: rgba($color: #000000, $alpha: .4);
     }
 }
