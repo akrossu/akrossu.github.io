@@ -1,6 +1,6 @@
-@use '../custom' as *;
+@use '../custom'as *;
 
 // GRADIENT MIXIN 
 @mixin gradient {
-    background: linear-gradient(16deg, rgba($blue, .95), rgba($accent-blue, .95));
+    background: linear-gradient(9.5deg, rgba($accent-blue, .95) 78%, rgba($blue, 1));
 }
