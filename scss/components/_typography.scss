@@ -1,22 +1,28 @@
-@use '../custom' as *;
+@use '../custom'as *;
 
 .display-2 {
     margin-bottom: 50px;
     text-transform: capitalize;
 
     &--title {
-        display: block;
+        font-family: 'Jetbrains Mono', monospace;
         font-weight: 600;
+        font-size: larger;
+        display: block;
     }
 
     &--typewriter {
         display: inline-block;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     &--description {
         display: block;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 2rem;
     }
+}
+
+.portfolio>h2 {
+    font-family: 'Jetbrains Mono', monospace;
 }
