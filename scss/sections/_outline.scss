@@ -1,40 +1,49 @@
-@use '../custom' as *;
+@use '../custom'as *;
 
 @media only screen and (max-width: 991px) {
     .line {
-        &--top, &--bottom {
+
+        &--top,
+        &--bottom {
             height: 3vh;
         }
-    
-        &--left, &--right {
+
+        &--left,
+        &--right {
             width: 1vh;
         }
     }
 }
 
 .line {
-    background: $pink;
-    
-    &--top, &--bottom {
+    background: $border;
+
+    &--top,
+    &--bottom {
         height: 3vh;
     }
 
-    &--left, &--right {
-        position:fixed;
+    &--left,
+    &--right {
+        position: fixed;
         top: 0;
         height: 100%;
         width: 3vh;
     }
-    
+
     &--right {
         right: 0;
     }
 
     @media (max-width: 991px) {
-        &--top, &--bottom {
+
+        &--top,
+        &--bottom {
             height: 1.6vh;
         }
-        &--left, &--right {
+
+        &--left,
+        &--right {
             width: 1.6vh;
         }
     }
