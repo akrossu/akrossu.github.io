@@ -7,11 +7,17 @@ const config = {
     adapter: adapter({
       pages: 'docs',
       assets: 'docs',
-      fallback: undefined,
+      fallback: null,
       precompress: false,
       strict: true
     })
   },
-  preprocess: vitePreprocess(),
+  preprocess: vitePreprocess({
+    postcss: true,
+    defaults: {
+        style: 'postcss',
+    },
+}),
+  // preprocess: vitePreprocess(),
 };
 export default config;
