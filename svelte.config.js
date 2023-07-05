@@ -4,8 +4,10 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    adapter: adapter()
+    adapter: adapter({
+      pages: 'build'
+    })
   },
-  preprocess: vitePreprocess()
+  preprocess: vitePreprocess(),
 };
 export default config;
