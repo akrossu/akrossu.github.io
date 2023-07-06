@@ -6,7 +6,7 @@
                     <h1 class="font-mono max-w-xl text-5xl font-semibold leading-[3.5rem]">
                         I'm Zach Merritt.
                     </h1>
-                    <div class="grid grid-cols-2">
+                    <div class="xl:grid xl:grid-cols-2">
                         <div>
                             <br />
                             <p>
@@ -22,7 +22,7 @@
                             </p><br />
                             <!-- TODO: make paragraph max width fit to content section -->
                         </div>
-                        <img class="max-w-lg mt-12 ml-8 border border-zinc-700 rounded-lg" src="/img/About.png" alt="Code">
+                        <img class="hidden xl:inline-block max-w-lg mt-12 ml-8 border border-zinc-700 rounded-lg" src="/img/About.png" alt="Code">
                     </div>
                 <!-- </div> -->
             </div>
