@@ -4,7 +4,7 @@
 
 <header class="flex justify-center">
     <nav class="relative sm:top-6">
-        <ul class="flex sm:space-x-7 space-x-4 rounded-full py-[.55rem] sm:px-7 px-4 sm:text-md text-sm bg-zinc-800 border-zinc-700 border">
+        <ul class="flex sm:space-x-7 space-x-4 rounded-full py-[.55rem] sm:px-7 px-4 sm:text-base text-sm bg-zinc-800 border-zinc-700 border">
             <Links />
         </ul>
     </nav>
