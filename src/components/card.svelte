@@ -5,9 +5,9 @@
     export let url;
 </script>
 
-<div class="relative inline-block overflow-hidden py-6 text-white">
+<div class="lg:relative lg:inline-block overflow-hidden py-3 lg:py-6 text-white">
     <div class="w-full {bg_img} bg-center bg-cover rounded-lg">
-        <div class="relative h-[26rem] px-6 pb-8 pt-10 backdrop-brightness-50 backdrop-blur-sm shadow-xl border border-zinc-700 max-w-sm sm:px-10 rounded-lg">
+        <div class="relative lg:h-[26rem] h-72 px-6 pb-8 pt-10 backdrop-brightness-50 backdrop-blur-sm shadow-xl border border-zinc-700 lg:max-w-sm sm:px-10 rounded-lg">
             <div class="static mx-auto max-w-sm">
                 <h1 class="font-mono font-semibold text-3xl">{title}</h1>
                 <p class="mt-2">{description}</p>

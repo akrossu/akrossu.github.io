@@ -3,12 +3,12 @@
 </script>
 
 <header class="flex justify-center">
-    <nav class="relative top-6">
-        <ul class="flex space-x-7 rounded-full py-[.55rem] px-7 bg-zinc-800 border-zinc-700 border">
+    <nav class="relative sm:top-6">
+        <ul class="flex sm:space-x-7 space-x-4 rounded-full py-[.55rem] sm:px-7 px-4 sm:text-md text-sm bg-zinc-800 border-zinc-700 border">
             <Links />
         </ul>
     </nav>
-    <div style="height: 8rem"></div>
+    <div class="sm:h-32 h-16"></div>
 </header>
 
 <!-- absolute bg-slate-400 w w-96 h-12 rounded-3xl -->
