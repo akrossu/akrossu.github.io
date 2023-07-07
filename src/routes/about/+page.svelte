@@ -4,6 +4,9 @@
     const imageStyle = ''
 </script>
 
+<svelte:head>
+    <title>About - Zach Merritt</title>    
+</svelte:head>
 <main class="about">
     <div class="about mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">

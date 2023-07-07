@@ -3,6 +3,9 @@
     import Links from '../components/links.svelte';
 </script>
 
+<svelte:head>
+    <title>Home - Zach Merritt</title>    
+</svelte:head>
 <main>
     <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
