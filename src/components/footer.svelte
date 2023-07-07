@@ -7,6 +7,6 @@
         <ul class="flex flex-wrap items-center justify-around sm:space-x-7">
             <Links />
         </ul>
-        <span class="flex justify-end mt-4 text-neutral-400">© 2023 Akross. All Rights Reserved.</span>
+        <span class="flex justify-end mt-4 sm:mt-0 text-neutral-400">© 2023 Akross. All Rights Reserved.</span>
     </div>
 </footer>
