@@ -19,9 +19,15 @@
                 </p>
                 <!-- Icons -->
                 <div class="mt-6 flex gap-2">
-                    <Links website="github" style="h-6 w-6" />
-                    <Links website="linkedin" style="h-6 w-6" />
-                    <Links website="discord" style="h-6 w-6" />
+                    <div class="relative">
+                        <Links website="github" style="h-6 w-6" />
+                    </div>
+                    <div class="relative">
+                        <Links website="linkedin" style="h-6 w-6" />
+                    </div>
+                    <div class="relative">
+                        <Links website="discord" style="h-6 w-6" />
+                    </div>
                 </div>
             </div>
         </div>
