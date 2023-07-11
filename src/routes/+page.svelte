@@ -33,5 +33,3 @@
         <Card title="Personal Website" url="https://github.com/AKR0SS/akr0ss.github.io" bg_img="bg-[url('/img/Website.png')]" description="Where you are now! This has been my playground for learning design and finding what libraries / frameworks I like the most." />
     </div>
 </main>
-
-<!-- bg-_dark-grey h-screen max-w-5xl mx-auto pt-[8rem] px-14 border-x border-neutral-800 -->
