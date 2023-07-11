@@ -1,1 +1,0 @@
-import{s,n as e}from"../chunks/scheduler.a7e64d23.js";import{S as a,i as n,B as r,f as c}from"../chunks/index.6e8cc51b.js";function h(o){return{c(){this.h()},l(t){r("svelte-1a8tja9",document.head).forEach(c),this.h()},h(){document.title="Projects - Zach Merritt"},m:e,p:e,i:e,o:e,d:e}}class l extends a{constructor(t){super(),n(this,t,null,h,s,{})}}export{l as component};
