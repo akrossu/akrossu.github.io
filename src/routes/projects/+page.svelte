@@ -21,17 +21,19 @@
                 <div class="lg:grid lg:grid-cols-2 mt-6 lg:p-4">
                     <ProjectCard
                         picture="/img/Kumiko.png"
-                        title="Kumiko Discord Bot"
+                        title="Kumiko"
                         description="An anime discord bot built for practical learning of Javascript."
                         repolink="https://kumiko.vercel.app/"
                         website="kumiko.app"
+                        technologies="javascript node.js"
                     />
                     <ProjectCard
                         picture ="/img/Taki.png"
-                        title="Taki MAL API Wrapper"
+                        title="Taki"
                         description="Taki is a simple MAL API wrapper made for Kumiko."
                         repolink="https://github.com/AKR0SS/Taki-MAL-API-Wrapper"
                         website="github.com"
+                        technologies="javascript node.js"
                     />
                     <ProjectCard
                         picture="/img/Website.png"
@@ -39,6 +41,7 @@
                         description="Where you are now! I've spend many hours aslave to learning front-end just for this."
                         repolink="https://github.com/AKR0SS/akr0ss.github.io"
                         website="github.com"
+                        technologies="svelte tailwind"
                     />
                     <ProjectCard
                         picture="/img/minecraft.png"
@@ -46,6 +49,7 @@
                         description="Allows for advanced displaying of various counters and statistics."
                         repolink="https://github.com/AKR0SS/fabric_dawn-hud"
                         website="github.com"
+                        technologies="java gradle"
                     />
                 </div>
             </div>
