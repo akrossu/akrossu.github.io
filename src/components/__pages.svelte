@@ -3,7 +3,7 @@
         { name: 'Home', href:'/'},
         { name: 'About', href:'/about'},
         { name: 'Projects', href:'/projects'},
-        { name: 'Resume', href:'/resume'},
+        //{ name: 'Resume', href:'/resume'},
         { name: 'Contact', href:'/contact' }
     ];
 
@@ -15,4 +15,4 @@
 <li><a class="{hoverColor} {transition}" href="{links[1].href}">{links[1].name}</a></li>
 <li><a class="{hoverColor} {transition}" href="{links[2].href}">{links[2].name}</a></li>
 <li><a class="{hoverColor} {transition}" href="{links[3].href}">{links[3].name}</a></li>
-<li><a class="{hoverColor} {transition}" href="{links[4].href}">{links[4].name}</a></li>
+<!-- <li><a class="{hoverColor} {transition}" href="{links[4].href}">{links[4].name}</a></li> -->
