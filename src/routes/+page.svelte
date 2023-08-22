@@ -18,16 +18,12 @@
                     in building unique and Innovative web applications.
                 </p>
                 <!-- Icons -->
-                <div class="mt-6 flex gap-2">
-                    <div class="relative">
-                        <Links website="github" style="h-6 w-6" />
-                    </div>
-                    <div class="relative">
-                        <Links website="linkedin" style="h-6 w-6" />
-                    </div>
-                    <div class="relative">
-                        <Links website="discord" style="h-6 w-6" />
-                    </div>
+                <div class="mt-6 flex">
+                    <ul class="flex gap-4">
+                        <li class="relative"><Links website="github" style="h-6 w-6" /></li>
+                        <li class="relative"><Links website="linkedin" style="h-6 w-6" /></li>
+                        <li class="relative"><Links website="discord" style="h-6 w-6" /></li>
+                    </ul>
                 </div>
             </div>
         </div>
