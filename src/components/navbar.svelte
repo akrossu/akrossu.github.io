@@ -19,7 +19,7 @@
                 </button>
                 {#if !directories}
                 <div class="origin-top-right absolute [&>*]:block ms-4">
-                    <a href="kumiko.vercel.app/" class="hover:text-yellow">/ Kumiko.app</a>
+                    <a href="https://kumiko.vercel.app/" class="hover:text-yellow">/ Kumiko.app</a>
                     <a href="https://discord.gg/sczXWkDsZ6" class="hover:text-yellow" target="_blank">/ Discord</a>
                 </div>
                 {/if}
