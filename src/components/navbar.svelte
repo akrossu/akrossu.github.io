@@ -15,7 +15,7 @@
             <li class="inline-block relative" bind:this={directories}>
                 <button class="group" type="button" on:click={() => (directories = !directories)} aria-expanded="true" aria-haspopup="true">
                     [ <span class="group-hover:text-yellow {!directories ? "text-orange group-hover:text-yellow-orange": "text-white"}">directories</span> ]
-                    <span class="inline-block ease-in-out duration-150 {!directories ? "rotate-180 text-orange": "text-white"}">v</span>
+                    <span class="inline-flex {!directories ? "rotate-180 text-orange": "text-white"}">^</span>
                 </button>
                 {#if !directories}
                 <div class="origin-top-right absolute [&>*]:block ms-4">
@@ -27,7 +27,7 @@
             <li class="inline-block" bind:this={projects}>
                 <button class="group" type="button" on:click={() => (projects = !projects)} aria-expanded="true" aria-haspopup="true">
                     [ <span class="group-hover:text-yellow {!projects ? "text-orange group-hover:text-yellow-orange": "text-white"}">projects</span> ]
-                    <span class="inline-block  ease-in-out duration-150 {!projects ? "rotate-180 text-orange": "text-white"}">v</span>
+                    <span class="inline-flex {!projects ? "rotate-180 text-orange": "text-white"}">^</span>
                 </button>
                 {#if !projects}
                 <div class="origin-top-right absolute [&>*]:block ms-4">
