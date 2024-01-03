@@ -36,3 +36,7 @@
   --pink: #a5405e;
   --magenta: #8e2a59;
 }
+
+body {
+  overflow: hidden;
+}
