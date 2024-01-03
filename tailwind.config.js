@@ -4,17 +4,28 @@ const {fontFamily} = require('tailwindcss/defaultTheme');
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    fontFamily: {
+      sans: ['"DinkieBitmap', 'Zpix', 'sans-serif'],
+      DinkieBitmap: ['"DinkieBitmap"'],
+      Zpix: ['"zpix"'],
+    },
     extend: {
-      backgroundImage: {
-        'kumiko' : "url('/img/Kumiko.png')",
-        'taki'   : "url('/img/Taki.png')",
-        'website': "url('/img/Website.png')"
+      colors: {
+        "dark-purple": "var(--dark-purple)",
+        "purple": "var(--purple)",
+        "dark-blue": "var(--dark-blue)",
+        "dark-cyan": "var(--dark-cyan)",
+        "cyan": "var(--cyan)",
+        "light-cyan": "var(--light-cyan)",
+        "yellow": "var(--yellow)",
+        "orange": "var(--orange)",
+        "yellow-orange": "var(--yellow-orange)",
+        "red": "var(--red)",
+        "pink": "var(--pink)",
+        "magenta": "var(--magenta)"
       },
-      fontFamily: {
-        sans: ['General Sans', ...fontFamily.sans],
-        mono: ['Jetbrains Mono', ...fontFamily.mono],
-      }
-    }
+    },
   },
-  plugins: []
-};
+  plugins: [],
+}
+

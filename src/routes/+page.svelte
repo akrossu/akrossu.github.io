@@ -1,37 +1,31 @@
-<script>
-    import Card from '../components/card.svelte';
-    import Links from '../components/links.svelte';
+<script lang="ts">
+    import StaticBars from '../components/staticBars.svelte';
+    import Navbar from '../components/navbar.svelte';
+    import Typer from '../components/typer.svelte';
+
+    let cpToggle:any;
 </script>
 
 <svelte:head>
-    <title>Home - Zach Merritt</title>    
+    <title>[ Home@Akross:/ ]</title>
 </svelte:head>
-<main>
-    <div class="mx-auto max-w-7xl lg:px-8">
-        <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                <h1 class="font-mono max-w-xl sm:text-5xl text-3xl font-semibold leading-[3.5rem]">
-                    I'm a Full-Stack Developer, Artist, and lover of games
-                </h1>
-                <p class="max-w-2xl pt-6 text-neutral-300 leading-8 tracking-wider">
-                    I'm Zach, a software engineer and student based in Northern Virginia. I have an interest
-                    in building unique and Innovative web applications.
-                </p>
-                <!-- Icons -->
-                <div class="mt-6 flex">
-                    <ul class="flex gap-4">
-                        <li class="relative"><Links website="github" style="h-6 w-6" /></li>
-                        <li class="relative"><Links website="linkedin" style="h-6 w-6" /></li>
-                        <li class="relative"><Links website="discord" style="h-6 w-6" /></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+
+<main class="select-none">
+    {#if cpToggle}<StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>{/if}
+    <Navbar></Navbar>
+    <div class="font-Zpix mt-60">
+        <h1 class="text-5xl text-center">I'm a Full-Stack Developer, Artist, and Student.</h1>
+        <h2 class="text-xl max-w-4xl text-center ms-auto me-auto h-auto mt-28">A software Engineering student based in Northern Virginia with an interest in building unique and innovative applications.</h2>
     </div>
-    <!-- Cards -->
-    <div class="lg:flex lg:justify-between mt-6 p-4 lg:p-0">
-        <Card title="Kumiko" url="https://github.com/AKR0SS/kumiko-discord-bot" bg_img="bg-[url('/img/Kumiko.png')]" description="Kumiko is my favorite project of recent. This is where I learned a majority of my JavaScript knowledge as well as working with foreign libraries."/>
-        <Card title="Taki API Wrapper" url="https://github.com/AKR0SS/Taki-MAL-API-Wrapper" bg_img="bg-[url('/img/Taki.png')]" description="Taki is an API Wrapper made specifically for Kumiko. This was my first interaction with direct API usage and quering." />
-        <Card title="Personal Website" url="https://github.com/AKR0SS/akr0ss.github.io" bg_img="bg-[url('/img/Website.png')]" description="Where you are now! This has been my playground for learning design and finding what libraries / frameworks I like the most." />
+    <Typer></Typer>
+    <div class="font-DinkieBitmap text-white text-opacity-40" bind:this={cpToggle}>
+        {#if !cpToggle}
+        <StaticBars color1="bg-light-cyan" color2="bg-cyan" color3="bg-dark-cyan"></StaticBars>
+        <div class="absolute bottom-[2px] right-5">:3</div>
+        {/if}
+        <button class="absolute bottom-[2px] right-10 " on:click={() => (cpToggle = !cpToggle)}>© 2024 Akross</button>
     </div>
 </main>
+
+
+

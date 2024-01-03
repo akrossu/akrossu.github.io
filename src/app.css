@@ -3,40 +3,36 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Regular.woff2') format('woff2'),
-         url('/fonts/GeneralSans-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: optional;
+  font-family: "DinkieBitmap";
+  src: url("/fonts/DinkieBitmap-7px.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'General Sans';
-    src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2'),
-         url('/fonts/GeneralSans-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: optional;
+  font-family: "zpix";
+  src: url("/fonts/zpix.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+  font-display: swap;
 }
 
-@font-face {
-    font-family: 'Jetbrains Mono';
-    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: optional;
-}
+:root {
+  --dark-purple: #1b0e21;
+  --purple: #1b112b;
 
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: optional;
-}
+  --dark-blue: #171a2c;
+  --dark-cyan: #2d4f59;
+  --cyan: #5a9586;
+  --light-cyan: #7ea892;
 
-/* Default Styling */
-p {
-    color: #c6c6c6;
+  --yellow: #d9c882;
+  --yellow-orange: #d9a568;
+  --orange: #c9835d;
+  --red: #b9535b;
+  --pink: #a5405e;
+  --magenta: #8e2a59;
 }
