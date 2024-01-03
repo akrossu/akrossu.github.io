@@ -4,6 +4,8 @@
     export let showContact:boolean;
     
     let dialog:any;
+    let height:number;
+    let width:number;
 
     $: if (dialog && showContact) dialog.setAttribute("open", "true");
 </script>
@@ -14,16 +16,14 @@
         font-size: 32px;
         pointer-events: all;
     }
-    a:hover{
-    }
     span {
         padding-inline-start: 1rem;
         opacity: 80%;
     }
 </style>
 
-<Draggable>
-<dialog class="bg-purple text-white pointer-events-none" bind:this={dialog} on:close={() => (showContact = !showContact)}>
+<Draggable height={height} width={width}>
+<dialog class="bg-purple text-white pointer-events-none" bind:this={dialog} bind:clientHeight={height} bind:clientWidth={width} on:close={() => (showContact = !showContact)}>
 	<div class="w-[700px] pb-6 border-cyan border-[5px]">
         <!-- Window Header -->
         <div class="h-10 ps-5 grid grid-cols-2 font-DinkieBitmap pointer-events-auto">
@@ -41,24 +41,24 @@
             </div>
         </div>
         <hr class="w-full block border-[3px] border-cyan" />
-        <div class="mx-6 mt-4 font-Zpix">
+        <div class="mx-6 mt-4 font-Zpix flex-row space-y-4">
             <div class="group inline-flex items-center">
-                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp</span>
+                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp&nbsp</span>
                 <a href="mailto:ZacharyT.Merritt@gmail.com" aria-label="Email">Email</a>
                 <span>Have official business to discuss? My Email is always open.</span>
             </div>
             <div class="group inline-flex items-center">
-                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp</span>
+                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp&nbsp</span>
                 <a href="https://github.com/akr0ss" aria-label="GitHub" target="_blank">Github</a>
                 <span>Check out some of my other projects not listed on here!</span>
             </div>
             <div class="group inline-flex items-center">
-                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp</span>
+                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp&nbsp</span>
                 <a href="https://discordapp.com/users/282593436803268618" aria-label="Discord" target="_blank">Discord</a>
                 <span>If you need to reach me quickly, this is where I'm most active.</span>
             </div>
             <div class="group inline-flex items-center">
-                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp</span>
+                <span class="group-hover:text-light-cyan text-dark-blue font-DinkieBitmap">>&nbsp&nbsp</span>
                 <a href="https://www.linkedin.com/in/zacharytmerritt/" aria-label="LinkedIn" target="_blank">LinkedIn</a>
                 <span>Want to connect and network further?</span>
             </div>

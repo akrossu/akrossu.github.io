@@ -4,24 +4,15 @@
     export let showAbout:boolean;
     
     let dialog:any;
+    let height:number;
+    let width:number;
 
     $: if (dialog && showAbout) dialog.setAttribute("open", "true");
 </script>
 
-<style>
-    h2 {
-        font-family: 'DinkieBitmap';
-        font-size: 32px;
-    }
-    span {
-        padding-inline-start: 1rem;
-        opacity: 80%;
-    }
-</style>
-
-<Draggable>
-<dialog class="bg-purple text-white pointer-events-none" bind:this={dialog} on:close={() => (showAbout = !showAbout)}>
-	<div class="w-[700px] pb-6 border-cyan border-[5px]">
+<Draggable height={height} width={width}>
+<dialog class="bg-purple text-white pointer-events-none" bind:this={dialog} bind:clientHeight={height} bind:clientWidth={width} on:close={() => (showAbout = !showAbout)}>
+	<div class="w-[500px] pb-6 border-cyan border-[5px]">
         <!-- Window Header -->
         <div class="h-10 ps-5 grid grid-cols-2 font-DinkieBitmap pointer-events-auto">
             <h1 class="pt-1 flex items-center text-2xl">about</h1>
