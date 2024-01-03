@@ -15,7 +15,9 @@
     <Navbar></Navbar>
     <div class="font-Zpix mt-60">
         <h1 class="text-5xl text-center">I'm a Full-Stack Developer, Artist, and Student.</h1>
-        <h2 class="text-xl max-w-4xl text-center ms-auto me-auto h-auto mt-28">A software Engineering student based in Northern Virginia with an interest in building unique and innovative applications.</h2>
+        <h2 class="text-xl max-w-4xl text-center ms-auto me-auto h-auto mt-28">
+            A Software Engineering student based in Northern Virginia with an interest in building unique and innovative applications.
+        </h2>
     </div>
     <Typer></Typer>
     <div class="font-DinkieBitmap text-white text-opacity-40" bind:this={cpToggle}>
