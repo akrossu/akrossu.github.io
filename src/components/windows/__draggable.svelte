@@ -1,4 +1,9 @@
 <script lang="ts">
+  import Window from "./__window.svelte";
+
+	export let height:number;
+	export let width:number;
+
     // Screen Position
 	export let left = 300;
 	export let top = 200;
@@ -21,6 +26,12 @@
 	}} 
 	on:mousemove={(e) => {
 		if (moving) {
+			// Bounding box
+			if (left < 0) left = 0;
+			if (top < 0)  top = 0;
+			if (left > window.innerWidth - width) left = window.innerWidth - width;
+			if (top > window.innerHeight - height) top = window.innerHeight - height;
+			// move
 			left += e.movementX;
 			top += e.movementY;
 		}
