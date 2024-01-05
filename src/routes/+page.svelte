@@ -13,7 +13,7 @@
 <main class="select-none">
     {#if cpToggle}<StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>{/if}
     <Navbar></Navbar>
-    <div class="font-Zpix mt-60">
+    <div class="font-Zpix mt-[13%]">
         <h1 class="text-5xl text-center">I'm a Full-Stack Developer, Artist, and Student.</h1>
         <h2 class="text-xl max-w-4xl text-center ms-auto me-auto h-auto mt-28">
             A Software Engineering student based in Northern Virginia with an interest in building unique and innovative applications.
