@@ -1,13 +1,11 @@
 <script lang="ts">    
     import Draggable from "./__draggable.svelte";
-    import { browser } from '$app/environment';
-    import Window from "./__window.svelte";
 
     export let showAbout:boolean;
     
     let dialog:any;
-    let height:number = window.innerHeight;
-    let width:number = window.innerWidth;
+    let height:number;
+    let width:number;
     
 
     $: if (dialog && showAbout) dialog.setAttribute("open", "true");
