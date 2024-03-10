@@ -1,12 +1,10 @@
 <script lang="ts">
-  import Window from "./__window.svelte";
-
 	export let height:number;
 	export let width:number;
 
     // Screen Position
-	export let left = 300;
-	export let top = 200;
+	let left = window.innerWidth / 20;
+	let top = window.innerHeight / 20;
 
 	let moving = false;
 </script>
