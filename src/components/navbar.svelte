@@ -7,6 +7,7 @@
 
     let showContact:boolean;
     let showAbout:boolean;
+    let showMinecraft:boolean;
 </script>
 
 <header class="font-DinkieBitmap text-2xl">
@@ -19,8 +20,10 @@
                 </button>
                 {#if !directories}
                 <div class="origin-top-right absolute [&>*]:block ms-4">
-                    <a href="https://kumiko.vercel.app/" class="hover:text-yellow">/ Kumiko.app</a>
+                    <a href="https://kumiko.vercel.app/" class="hover:text-yellow" target="_blank">/ Kumiko.app</a>
                     <a href="https://discord.gg/sczXWkDsZ6" class="hover:text-yellow" target="_blank">/ Discord</a>
+                    <a href="/minecraft" class="hover:text-yellow">/ Minecraft</a>
+                    <!-- <li><button on:click={() => (showMinecraft = !showMinecraft)}>[ <span class="hover:text-yellow">/ Minecraft</span> ]</button></li> -->
                 </div>
                 {/if}
             </li>
@@ -45,3 +48,4 @@
 
 <About bind:showAbout></About>
 <Contact bind:showContact></Contact>
+<!-- <Minecraft bind:showMinecraft></Minecraft> -->
