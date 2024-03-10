@@ -2,23 +2,20 @@
 	export let height:number;
 	export let width:number;
 
+	let inHeight:number;
+	let inWidth:number;
     // Screen Position
-	let left = window.innerWidth / 20;
-	let top = window.innerHeight / 20;
+	$: left = inHeight / 20;
+	$: top = inWidth / 20;
 
 	let moving = false;
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<section 
-	on:mousedown={() => {
-		moving = true;
-	}} 
-	style="left: {left}px; top: {top}px" class="absolute cursor-move select-none"> <!-- left-[{left}] top-[{top}] -->
-	<slot />
-</section>
 
-<svelte:window 
+<svelte:window
+	bind:innerHeight={inHeight}
+	bind:innerWidth={inWidth}
 	on:mouseup={() => {
 		moving = false;
 	}} 
@@ -35,3 +32,12 @@
 		}
 	}}
 />
+
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<section 
+	on:mousedown={() => {
+		moving = true;
+	}} 
+	style="left: {left}px; top: {top}px" class="absolute cursor-move select-none"> <!-- left-[{left}] top-[{top}] -->
+	<slot />
+</section>
