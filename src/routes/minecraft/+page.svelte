@@ -1,6 +1,8 @@
 <script lang="ts">
     import StaticBars from '../../components/staticBars.svelte'
 
+    import img from '$lib/assets/darkrpg.png';
+
     function discordLinks() {
         const link1 = 'https://cdn.discordapp.com/attachments/678347708238659624/1216206376934834337/DistantHorizons-fabric-2.0.2-a-dev-1.20.1.jar?ex=65ff8b74&is=65ed1674&hm=c3563b8b6877dd64428279c092b9af88e9b603a18a6879c594d4eedd357efed6&';
         const link2 = 'https://cdn.discordapp.com/attachments/678347708238659624/1216206377257664542/iris-mc1.20.1-1.7-alpha.1-185a9812.jar?ex=65ff8b74&is=65ed1674&hm=18b1130c45d9561864ee2b3bf548ed63f3566567df8d2c1a2430dd7a56ea04f8&';
@@ -24,7 +26,7 @@
     <div class="mx-56">
         <!-- <h2 class="font-DinkieBitmap text-3xl">Dark RPG</h2> -->
         <div class="flex flex-row gap-6">
-            <img src="/src/lib/assets/darkrpg.png" alt="" class="w-52 h-52">
+            <img src={img} alt="" class="w-52 h-52">
             <div class="basis-3/4">
                 <h3 class="text-2xl font-DinkieBitmap">Steps</h3>
                 <ol class="font-Zpix">
