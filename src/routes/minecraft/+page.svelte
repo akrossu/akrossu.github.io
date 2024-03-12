@@ -16,12 +16,9 @@
     <title>[ Home@Akross:/Minecraft ]</title>
 </svelte:head>
 
-<main class="mb-[90px]">
-    <div class="hidden md:block">
-        <StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>
-    </div>
+<main class="mb-24 flex-1">
     <div class="mt-6">
-        <a href="/" class="relative ml-32 font-DinkieBitmap text-2xl hover:text-yellow">&lt; Return home</a>
+        <a href="/" class="relative ml-32 font-DinkieBitmap text-2xl hover:text-yellow">&lt; Return Home</a>
         <h1 class="text-5xl text-center pt-6 font-Zpix">Minecraft Modpacks</h1>
     </div>
     <p class="my-16 mx-auto"></p>
@@ -34,18 +31,20 @@
                     <li>- Install the <a href="https://download.overwolf.com/install/Download?ExtensionId=cfiahnpaolfnlgaihhmobmnjdafknjnjdpdabpcm" target="_blank" class="text-yellow hover:text-yellow-orange">CurseForge App</a> and the <a href="https://www.curseforge.com/minecraft/modpacks/medieval-mc-fabric-mmc2" target="_blank" class="text-yellow hover:text-yellow-orange">Medieval Modpack</a>.</li>
                     <li>- Make sure to allocate 8 - 10 gigabytes of RAM.</li>
                     <li>- Delete and replace your mods folder with the <a href="https://drive.google.com/drive/folders/13oMCzweGkASWCXZzN_z40Fol3UIWnU0V" target="_blank" class="text-yellow hover:text-yellow-orange">updated mod list</a>.</li>
+                    <ul>
+                        - Please relace your existing files with <a href="https://cdn.discordapp.com/attachments/728016909378781307/1217183896769265764/JSP_REPLACEMENTS.zip?ex=660319d7&is=65f0a4d7&hm=d71a65a95894e859cbde0a0180afcbae96d07422ae3a09e9aeca4b6f0902a383&" class="text-yellow hover:text-yellow-orange">these</a>.
+                        <li class="ps-4">- <span class="text-light-cyan">You do not need to replace your options if you would like to adjust everything manually.</span></li>
+                    </ul>
                 </ol>
                 <h4 class="text-xl font-DinkieBitmap pt-4">(Optional)</h4>
                 <ol class="font-Zpix">
-                    <li>- You can <a href="https://cdn.discordapp.com/attachments/324008937705963521/1216605052182069330/config.zip?ex=6600febf&is=65ee89bf&hm=71c671b00d3a8b55dfbdd8b0638625b3129aaec0c1321efd0dffb2f39bbd9c42&" class="text-yellow hover:text-yellow-orange">download</a> my preset binds, shaders, and settings for an even easier experience.</li>
                     <!-- Distant Horizons -->
-                    <li class="pt-2">Distant Horizons is a mod that allows you to substantially increase your render distance and is highly recommended to use with shaders.</li>
-                    <li>- Download <button on:click={discordLinks} class="text-yellow hover:text-yellow-orange">these two mods</button> and place them within your mods folder.</li>
+                    <li class="pt-2">Distant Horizons is a mod that allows you to substantially increase your render distance and is highly recommended to use with shaders. The required updated mods are included in the updated mod list already downloaded.</li>
                     <li>- You will need <a href="https://github.com/X0nk/Bliss-Shader/archive/refs/heads/main.zip" class="text-yellow hover:text-yellow-orange">these specific shaders</a> in order for them to work with Distant Horizons.</li>
                     <li>- Additionally, you can <a href="https://drive.google.com/file/d/1zopsMRsHw3la3BN1zaN4xUBV-9l0sVNV/view?usp=drive_link" class="text-yellow hover:text-yellow-orange">download</a> a large pregenerated area so the experience is seamless.</li>
                 </ol>
             </div>
-            <div class="basis-1/4">
+            <div class="basis-1/4 mt-4 lg:mt-0">
                 <h3 class="text-2xl font-DinkieBitmap">Server Details</h3>
                 <ul class="font-Zpix">
                     <li>IP: <span class="select-text">jsp.cloudnord.net</span></li>
@@ -55,6 +54,7 @@
         </div>
     </div>
 </main>
+<StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>
 
 
 
