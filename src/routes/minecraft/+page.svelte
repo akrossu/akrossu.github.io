@@ -24,7 +24,6 @@
     <p class="my-16 mx-auto"></p>
     <div class="mx-6 md:mx-24 lg:mx-[15%]">
         <div class="block lg:flex lg:flex-row gap-6">
-            <img src={img} alt="" class="w-52 h-52 rounded-xl hidden lg:block">
             <div class="basis-3/4">
                 <h3 class="text-2xl font-DinkieBitmap">Medieval Modpack installatoin steps:</h3>
                 <ol class="font-Zpix">
@@ -45,7 +44,8 @@
                 </ol>
             </div>
             <div class="basis-1/4 mt-4 lg:mt-0">
-                <h3 class="text-2xl font-DinkieBitmap">Server Details</h3>
+                <img src={img} alt="" class="w-52 h-52 rounded-xl hidden lg:block">
+                <h3 class="text-2xl font-DinkieBitmap lg:mt-4">Server Details</h3>
                 <ul class="font-Zpix">
                     <li>IP: <span class="select-text">jsp.cloudnord.net</span></li>
                     <li>Max Players: 10</li>
