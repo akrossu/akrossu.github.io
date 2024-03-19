@@ -1,4 +1,4 @@
-![banner](https://media.discordapp.net/attachments/678347708238659624/1192185495896215692/image.png?ex=65a82843&is=6595b343&hm=0bae148ffe2458ce6f1c8862b732514ba535bc9d140b1106d6cf5fdeb6669261&=&quality=lossless)
+![banner](https://i.imgur.com/hEBr7JV.png)
 
 <h3><div align="center">Welcome to my personal website's repo</div></h3>
 
