@@ -25,11 +25,13 @@
     <div class="mx-6 md:mx-24 lg:mx-[15%]">
         <div class="block lg:flex lg:flex-row gap-6">
             <div class="basis-3/4">
-                <h3 class="text-2xl font-DinkieBitmap">Medieval Modpack installatoin steps:</h3>
+                <h3 class="text-2xl font-DinkieBitmap">Medieval Modpack installation steps:</h3>
+                <h2 class="font-Zpix text-red">IMPORTANT: If at any point, your modpack has failed to install, completely delete and reinstall the modpack and start from the beginning.</h2>
                 <ol class="font-Zpix">
                     <li>- Install the <a href="https://download.overwolf.com/install/Download?ExtensionId=cfiahnpaolfnlgaihhmobmnjdafknjnjdpdabpcm" target="_blank" class="text-yellow hover:text-yellow-orange">CurseForge App</a> and the <a href="https://www.curseforge.com/minecraft/modpacks/medieval-mc-fabric-mmc2" target="_blank" class="text-yellow hover:text-yellow-orange">Medieval Modpack</a>.</li>
                     <li>- Make sure to allocate 8 - 10 gigabytes of RAM.</li>
-                    <li>- Delete and replace your mods folder with the <a href="https://drive.google.com/drive/folders/13oMCzweGkASWCXZzN_z40Fol3UIWnU0V" target="_blank" class="text-yellow hover:text-yellow-orange">updated mod list</a>.</li>
+                    <li>- Delete and replace your entire mods folder with the <a href="https://drive.google.com/drive/folders/13oMCzweGkASWCXZzN_z40Fol3UIWnU0V" target="_blank" class="text-yellow hover:text-yellow-orange">updated mod list</a>.</li>
+                    <li class="ps-4"> - Start your game before replacing any other files.</li>
                     <ul>
                         - Please relace your existing files with <a href="https://cdn.discordapp.com/attachments/728016909378781307/1217183896769265764/JSP_REPLACEMENTS.zip?ex=660319d7&is=65f0a4d7&hm=d71a65a95894e859cbde0a0180afcbae96d07422ae3a09e9aeca4b6f0902a383&" class="text-yellow hover:text-yellow-orange">these</a>.
                         <li class="ps-4">- <span class="text-light-cyan">You do not need to replace your options if you would like to adjust everything manually.</span></li>
