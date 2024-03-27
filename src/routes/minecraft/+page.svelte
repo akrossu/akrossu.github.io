@@ -33,7 +33,7 @@
                     <li>- Delete and replace your entire mods folder with the <a href="https://drive.google.com/drive/folders/13oMCzweGkASWCXZzN_z40Fol3UIWnU0V" target="_blank" class="text-yellow hover:text-yellow-orange">updated mod list</a>.</li>
                     <li class="ps-4"> - Start your game before replacing any other files.</li>
                     <ul>
-                        - Please relace your existing files with <a href="https://cdn.discordapp.com/attachments/728016909378781307/1217183896769265764/JSP_REPLACEMENTS.zip?ex=660319d7&is=65f0a4d7&hm=d71a65a95894e859cbde0a0180afcbae96d07422ae3a09e9aeca4b6f0902a383&" class="text-yellow hover:text-yellow-orange">these</a>.
+                        - Please relace your existing files with <a href="https://drive.google.com/file/d/1c1nYC9SlzEpPLkXuNMddz9L46jpdmubt/view?usp=sharing" target="_blank" class="text-yellow hover:text-yellow-orange">these</a>.
                         <li class="ps-4">- <span class="text-light-cyan">You do not need to replace your options if you would like to adjust everything manually.</span></li>
                     </ul>
                 </ol>
@@ -41,8 +41,8 @@
                 <ol class="font-Zpix">
                     <!-- Distant Horizons -->
                     <li class="pt-2">Distant Horizons is a mod that allows you to substantially increase your render distance and is highly recommended to use with shaders. The required updated mods are included in the updated mod list already downloaded.</li>
-                    <li>- You will need <a href="https://github.com/X0nk/Bliss-Shader/archive/refs/heads/main.zip" class="text-yellow hover:text-yellow-orange">these specific shaders</a> in order for them to work with Distant Horizons.</li>
-                    <li>- Additionally, you can <a href="https://drive.google.com/file/d/1zopsMRsHw3la3BN1zaN4xUBV-9l0sVNV/view?usp=drive_link" class="text-yellow hover:text-yellow-orange">download</a> a large pregenerated area so the experience is seamless.</li>
+                    <li>- You will need <a href="https://github.com/X0nk/Bliss-Shader/archive/refs/heads/main.zip" target="_blank" class="text-yellow hover:text-yellow-orange">these specific shaders</a> in order for them to work with Distant Horizons.</li>
+                    <li>- Additionally, you can <a href="https://drive.google.com/file/d/1zopsMRsHw3la3BN1zaN4xUBV-9l0sVNV/view?usp=drive_link" target="_blank" class="text-yellow hover:text-yellow-orange">download</a> a large pregenerated area so the experience is seamless.</li>
                 </ol>
             </div>
             <div class="basis-1/4 mt-4 lg:mt-0">
@@ -57,6 +57,7 @@
     </div>
 </main>
 <StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>
+<span class="absolute bottom-12 md:bottom-[2px] right-14 font-DinkieBitmap opacity-40">© 2024 Akross</span>
 
 
 
