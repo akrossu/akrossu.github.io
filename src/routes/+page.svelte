@@ -25,11 +25,11 @@
     <div class="font-DinkieBitmap text-white text-opacity-40" bind:this={cpToggle}>
         {#if !cpToggle}
         <StaticBars color1="bg-light-cyan" color2="bg-cyan" color3="bg-dark-cyan"></StaticBars>
-        <div class="absolute bottom-[2px] right-5">:3</div>
+        <div class="absolute bottom-[2px] right-8">:3</div>
         {/if}
+        {#if cpToggle}<StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>{/if}
         <button class="absolute bottom-12 md:bottom-[2px] right-14" on:click={() => (cpToggle = !cpToggle)}>© 2024 Akross</button>
     </div>
 </main>
-{#if cpToggle}<StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>{/if}
 
 
