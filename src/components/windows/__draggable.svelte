@@ -5,8 +5,8 @@
 	let inHeight:number;
 	let inWidth:number;
     // Screen Position
-	$: left = inHeight / 20;
-	$: top = inWidth / 20;
+	$: left = 1 / 20;
+	$: top = 1 / 20;
 
 	let moving = false;
 </script>
