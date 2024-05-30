@@ -57,7 +57,7 @@
     </div>
 </main>
 <StaticBars color1="bg-orange" color2="bg-red" color3="bg-magenta"></StaticBars>
-<span class="absolute bottom-12 md:bottom-[2px] right-14 font-DinkieBitmap opacity-40">© 2024 Akross</span>
+<span class="font-DinkieBitmap opacity-40 w-full md:w-auto md:absolute bottom-12 md:bottom-[2px] md:right-14">© 2024 Akross</span>
 
 
 
