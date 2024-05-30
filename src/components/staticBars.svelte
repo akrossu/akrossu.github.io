@@ -10,7 +10,7 @@
     <div class="w-[15px] md:w-[30px] h-[10%] md:h-[18.7%] max-h-[120px] {color2} absolute top-0 left-[15px] md:left-[30px] rounded-br-[10px]"></div>
     <div class="w-[15px] md:w-[30px] h-[8%] md:h-[14%] max-h-[90px] {color3} absolute top-0 left-[30px] md:left-[60px] rounded-br-[10px]"></div>
     <!-- Bottom Bars -->
-    <div class="flex-shrink-0 bottom-0 md:static">
+    <div class="hidden md:flex w-full">
         <div class="min-w-full {color3} h-[15px] md:h-[30px] md:absolute bottom-[30px] md:bottom-[60px]"></div>
         <div class="min-w-full {color2} h-[15px] md:h-[30px] md:absolute bottom-[15px] md:bottom-[30px]"></div>
         <div class="min-w-full {color1} h-[15px] md:h-[30px] md:absolute bottom-0"></div>
