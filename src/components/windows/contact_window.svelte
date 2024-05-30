@@ -24,7 +24,7 @@
 
 <Draggable height={height} width={width}>
 <dialog class="bg-purple text-white pointer-events-none" bind:this={dialog} bind:clientHeight={height} bind:clientWidth={width} on:close={() => (showContact = !showContact)}>
-	<div class="w-[700px] pb-6 border-cyan border-[5px]">
+	<div class="w-screen h-screen md:w-[700px] md:h-auto pb-6 border-cyan border-[5px]">
         <!-- Window Header -->
         <div class="h-10 ps-5 grid grid-cols-2 font-DinkieBitmap pointer-events-auto">
             <h1 class="pt-1 flex items-center text-2xl">contact</h1>

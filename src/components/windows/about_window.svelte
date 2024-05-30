@@ -6,14 +6,13 @@
     let dialog:any;
     let height:number;
     let width:number;
-    
 
     $: if (dialog && showAbout) dialog.setAttribute("open", "true");
 </script>
 
 <Draggable height={height} width={width}>
 <dialog class="bg-purple text-white pointer-events-none" bind:this={dialog} bind:clientHeight={height} bind:clientWidth={width} on:close={() => (showAbout = !showAbout)}>
-	<div class="w-[500px] pb-6 border-cyan border-[5px]">
+	<div class="w-screen h-screen md:h-auto md:w-[500px] pb-6 border-cyan border-[5px]">
         <!-- Window Header -->
         <div class="h-10 ps-5 grid grid-cols-2 font-DinkieBitmap pointer-events-auto">
             <h1 class="pt-1 flex items-center text-2xl">about</h1>
@@ -21,7 +20,7 @@
                 <button class="hover:bg-dark-cyan" on:click={() => dialog.close()}>
                     <svg width="14" height="3"><rect width="14" height="3" style="stroke-width:5;stroke:#ffffff" /></svg>
                 </button>
-                <button class="hover:bg-dark-cyan"> <!-- Will Maximize to open a Page /KumikoApp -->
+                <button class="hover:bg-dark-cyan"> <!-- Will Maximize to open a Page /about -->
                     <svg width="14" height="14"><rect width="14" height="14" style="stroke-width:5;stroke:#ffffff;fill:#00000000" /></svg>
                 </button>
                 <button class="hover:bg-red transition-all duration-75" on:click={() => dialog.close()}>
