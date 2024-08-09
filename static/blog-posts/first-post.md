@@ -1,5 +1,5 @@
-# title: "welcome to my personal blog!! :3"
-# dat: "08-08-2024"
+## title: "welcome to my personal blog!! :3"
+## date: "08-08-2024"
 
 I'm not really sure what to write here. This is mostly a test see if my code is working and dynamically loading each markdown file in the github repository.
 
