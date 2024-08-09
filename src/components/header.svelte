@@ -53,7 +53,7 @@
         <div class="ps-4 h-[60px] mb-4">
             <h1 class="text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
             <div class="mb-4">
-                <span class="pl-4" href="youtube.com">current status: </span>
+                <span class="pl-4">current status: </span>
                 <img class="inline w-8" src="{imageStatus}" alt="">
                 <span class="font-sans">{textStatus}</span>
             </div>
