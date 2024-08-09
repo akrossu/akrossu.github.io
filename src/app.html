@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="darkreader-lock">
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div class="divcanvas block bg-black m-0 p-0">
+			<canvas class="h-svh w-svw fixed" id="bg"></canvas>
+			<main class="relative">
+				<div class="p-0 pl-8 pt-8 absolute bg-transparent flex overflow-auto">
+					%sveltekit.body%
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

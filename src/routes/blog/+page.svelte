@@ -1,0 +1,45 @@
+<script>
+    import { onMount } from 'svelte';
+    import SvelteMarkdown from 'svelte-markdown';
+    import Header from '../../components/header.svelte';
+    import Sidebar from '../../components/sidebar.svelte';
+
+    const title = "blog"
+
+    const blogTitles = [
+        'aws-quickstart',
+        // 'gpt-3-generated-poetry',
+    ];
+
+    let blogPosts = [];
+    let post = "";
+
+    onMount(async () => {
+        for(let i = 0; i < blogTitles.length; i++) {
+            fetch(`https://raw.githubusercontent.com/pixegami/nextjs-blog-tutorial/main/posts/${blogTitles[i]}.md`)
+            .then(response => response.text())
+            .then(data => {
+                blogPosts[i] = data.toString();
+                // console.log(blogPosts[i]);
+            })
+        }
+    })
+</script>
+
+<svelte:head>
+    <title>[ home@akross:/{title} ]</title>
+    <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+    <script src="../src/lib/index.js" type="module" />
+</svelte:head>
+
+<Sidebar title={title}></Sidebar>
+<div>
+    <Header title={title}></Header>
+    <div class="max-w-[675px]">
+        {#each blogPosts as post}
+            <SvelteMarkdown source={post} onparsed={console.log(post)}/>
+            <div class="mb-24"></div>
+        {/each}
+    </div>
+    <!-- <img src="http://textfiles.com/underconstruction/HeHeartlandValley1469underconstruction2.gif" alt=""> -->
+</div>
