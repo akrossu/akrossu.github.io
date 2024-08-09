@@ -20,7 +20,6 @@
             .then(response => response.text())
             .then(data => {
                 blogPosts[i] = data.toString();
-                // console.log(blogPosts[i]);
             })
         }
     })
@@ -28,8 +27,6 @@
 
 <svelte:head>
     <title>[ home@akross:/{title} ]</title>
-    <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
-    <script src="../src/lib/index.js" type="module" />
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
@@ -37,7 +34,7 @@
     <Header title={title}></Header>
     <div class="max-w-[675px]">
         {#each blogPosts as post}
-            <SvelteMarkdown source={post} onparsed={console.log(post)}/>
+            <SvelteMarkdown source={post}/>
             <div class="mb-24"></div>
         {/each}
     </div>

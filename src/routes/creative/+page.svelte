@@ -7,8 +7,6 @@
 
 <svelte:head>
     <title>[ home@akross:/{title} ]</title>
-    <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
-    <script src="../src/lib/index.js" type="module" />
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
