@@ -16,7 +16,7 @@
 
     onMount(async () => {
         for(let i = 0; i < blogTitles.length; i++) {
-            fetch(`https://raw.githubusercontent.com/pixegami/nextjs-blog-tutorial/main/posts/${blogTitles[i]}.md`)
+            fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog-posts/${blogTitles[i]}.md`)
             .then(response => response.text())
             .then(data => {
                 blogPosts[i] = data.toString();
