@@ -7,7 +7,7 @@
     const title = "blog"
 
     const blogTitles = [
-        'aws-quickstart',
+        'first-post',
         // 'gpt-3-generated-poetry',
     ];
 
