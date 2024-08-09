@@ -28,7 +28,7 @@ so for my `current status` you see at the top of the page, it's actually queryin
 
 <br>
 
-also if you haven't visited the [\[ akross:/lore \]]() page, i'd highly recommend it. You can learn a little about ' ᨐ ', and if you squint your eyes, it looks like a cat!
+also if you haven't visited the [\[ akross:/lore \]](https://akrossu.github.io/lore/) page, i'd highly recommend it. You can learn a little about ' ᨐ ', and if you squint your eyes, it looks like a cat!
 
 ## anyways
 
