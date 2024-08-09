@@ -1,8 +1,7 @@
 <script>
-    import Header from '../../components/header.svelte';
-    import Sidebar from '../../components/sidebar.svelte';
+    import Header from '$components/header.svelte';
+    import Sidebar from '$components/sidebar.svelte';
 
-    let color = "";
     const title = 'game-list';
 </script>
 

@@ -1,6 +1,6 @@
 <script>
-    import Header from '../../components/header.svelte';
-    import Sidebar from '../../components/sidebar.svelte';
+    import Header from '$components/header.svelte';
+    import Sidebar from '$components/sidebar.svelte';
 
     const title = "creative";
 </script>

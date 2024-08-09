@@ -1,8 +1,8 @@
 <script>
     import { onMount } from 'svelte';
     import SvelteMarkdown from 'svelte-markdown';
-    import Header from '../../components/header.svelte';
-    import Sidebar from '../../components/sidebar.svelte';
+    import Header from '$components/header.svelte';
+    import Sidebar from '$components/sidebar.svelte';
 
     const title = "blog"
 

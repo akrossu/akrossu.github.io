@@ -1,9 +1,8 @@
 <script>
-    import Header from '../../components/header.svelte';
-    import Sidebar from '../../components/sidebar.svelte';
-    import Shield from '../../components/shield.svelte';
+    import Header from '$components/header.svelte';
+    import Sidebar from '$components/sidebar.svelte';
+    import Shield from '$components/shield.svelte';
 
-    let color = "";
     const title = 'about';
 </script>
 
