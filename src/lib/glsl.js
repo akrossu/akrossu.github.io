@@ -1,4 +1,4 @@
-"use strict";
+import { onMount } from 'svelte';
 
 function main() {
   // Get A WebGL context
