@@ -1,1 +1,8 @@
 first-post
+this
+is
+a
+test
+to
+read
+array
