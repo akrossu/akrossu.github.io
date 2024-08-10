@@ -6,23 +6,26 @@
 
     const title = "blog"
 
-    const blogTitles = [
-        'first-post',
-        // 'gpt-3-generated-poetry',
-    ];
-
+    let blogTitles = [];
     let blogPosts = [];
     let post = "";
 
     onMount(async () => {
+        await fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog.txt`)
+        .then(response => response.text())
+        .then(data => {
+            blogTitles = data.split('\n');
+            blogTitles.length--;
+        });
+        
         for(let i = 0; i < blogTitles.length; i++) {
             fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog-posts/${blogTitles[i]}.md`)
             .then(response => response.text())
             .then(data => {
                 blogPosts[i] = data.toString();
-            })
+            });
         }
-    })
+    });
 </script>
 
 <svelte:head>
