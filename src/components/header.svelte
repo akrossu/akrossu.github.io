@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="block">
-            <ul class="flex flex-1 justify-evenly mr-auto
+            <ul class="flex flex-1 justify-evenly mr-auto underline-links
                         md:border-l-0 w-full md:max-w-fit md:justify-normal md:gap-4 md:px-4 py-2 text-lg font-bold
                         border-border border-solid border-2">
                 <li><a href="/">home</a></li>

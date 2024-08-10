@@ -42,3 +42,7 @@ html {
     overflow-y: auto;
     text-transform: lowercase;
 }
+
+.underline-links a {
+    text-decoration: underline;
+}
