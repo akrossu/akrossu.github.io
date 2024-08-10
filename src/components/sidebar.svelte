@@ -18,7 +18,7 @@
     };
 </script>
 
-<div class="text-center w-72 mr-16" >
+<div class="text-center w-72 mr-16 hidden md:block min-w-fit" >
     <div class="flex justify-center items-center mb-4">
         <img class="w-24" src="/assets/iconcat.gif" alt="">
     </div>

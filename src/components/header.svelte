@@ -46,24 +46,29 @@
 </script>
 
 <div class="flex relative mb-8">
-    <div class="w-[112px] relative">
+    <div class="hidden md:block w-[100px] relative">
         <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="">
     </div>
     <div class="flex-1">
-        <div class="ps-4 h-[60px] mb-4">
-            <h1 class="text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
-            <div class="mb-4">
+        <div class="ps-4 h-[60px]">
+            <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
+            <div>
                 <span class="pl-4">current status: </span>
                 <img class="inline w-8" src="{imageStatus}" alt="">
                 <span class="font-sans">{textStatus}</span>
             </div>
         </div>
         <div class="block">
-            <ul class="inline-flex border-border border-solid border-2 border-l-0 gap-4 px-4 py-2 underline text-lg font-bold">
-                <a href="/">home</a>
-                <a class="border-l-2 border-border pl-4" href="/creative">creative</a>
-                <a class="border-l-2 border-border pl-4" href="/information">information</a>
-                <a class="border-l-2 border-border pl-4" href="/community">community</a>
+            <ul class="flex flex-1 justify-evenly mr-auto
+                        md:border-l-0 w-full md:max-w-fit md:justify-normal md:gap-4 md:px-4 py-2 text-lg font-bold
+                        border-border border-solid border-2">
+                <li><a href="/">home</a></li>
+                <li class="border-border border-solid border-l-2"></li>
+                <li><a href="/creative">creative</a></li>
+                <li class="border-border border-solid border-l-2"></li>
+                <li><a href="/information">information</a></li>
+                <li class="border-border border-solid border-l-2"></li>
+                <li><a href="/community">community</a></li>
             </ul>
         </div>
     </div>
