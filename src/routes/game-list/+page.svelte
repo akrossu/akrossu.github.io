@@ -22,13 +22,13 @@
         </div>
     
         <h2 class="mt-4">Plan to play games</h2>
-        <h3>// Short and cute games ( &lt 10 hours )</h3>
+        <h3>// Short and cute games ( 10 - 40 hours )</h3>
         <ul class="ps-4">
             <li>&gt road 96</li>
             <li>&gt a short hike</li>
             <li>&gt stray</li>
         </ul>
-        <h3>// medium length games ( &lt 10 hours )</h3>
+        <h3>// medium length games ( 40+ hours )</h3>
         <ul class="ps-4">
             <li>&gt half-life alyx</li>
             <li>&gt finaly fantasy 10</li>
