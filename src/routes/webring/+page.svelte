@@ -12,5 +12,5 @@
 <Sidebar title={title}></Sidebar>
 <div class="max-w-[675px]">
     <Header title={title}></Header>
-    <img src="/second-stamp.gif" alt="">
+    <img src="/assets/webring/second-stamp.gif" alt="akross stamp">
 </div>

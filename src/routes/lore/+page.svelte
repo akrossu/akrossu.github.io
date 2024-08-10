@@ -17,13 +17,13 @@
     <p>&gt This webpage you see before you was that first message, decoded after a semicentury from its original broadcast and reading.</p>
 
     <h3 class="mt-4">// here is some of that original message:</h3>
-    <img src="/transCode.png" alt="">
+    <img src="/assets/lore/transCode.png" alt="">
     
     <p class="mt-8">&gt it took over 50 years to make sense of this jumble of letters and symbols. Today however, through the efforts of mr ██████ ██ ██████ and senior ██████ ███ we have what is before our eyes.</p>
     <p>&gt their work however would be leaked by another group in attempt to descructure their organization, fualting their structure.</p>
 
     <h3 class="mt-4">// this was the message they put together:</h3>
-    <img class="border-border border-2 border-solid" src="/encoded.png" alt="">
+    <img class="border-border border-2 border-solid" src="/assets/lore/encoded.png" alt="">
 
     <p class="mt-8">&gt This is where Project Akross and the webmaster clashed. Having the same name complicates things but, in turn, intertwined the fate of his existence- changing him forever.</p>
     <p>&gt the ' ᨐ ' figure you find at the top of each page is a remnant of the sites' origins. He likes to go by the name "Yep" in human. He's also kind of like a cat.</p>

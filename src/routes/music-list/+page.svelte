@@ -12,5 +12,5 @@
 <Sidebar title={title}></Sidebar>
 <div class="max-w-[675px]">
     <Header title={title}></Header>
-    <img src="http://textfiles.com/underconstruction/HeHeartlandValley1469underconstruction2.gif" alt="">
+    <img src="/assets/construction.gif" alt="under construction">
 </div>

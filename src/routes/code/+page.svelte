@@ -17,7 +17,7 @@
     <p class="mb-4">&gt Where you can find all of my public coding projects</p>
     <!-- Portfolio Website -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/personal-website.png" alt="">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/personal-website.png" alt="">
         <div>
             <h2>akrossu.github.io</h2>
             <p>&gt personal/portfolio website.</p>
@@ -36,7 +36,7 @@
     <div></div>
     <!-- Discord Theme -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/discord-theme.png" alt="">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/discord-theme.png" alt="">
         <div>
             <h2>Simple and Clean</h2>
             <p>&gt A discord theme that takes advantage of the full app area.</p>
@@ -47,7 +47,7 @@
     <div></div>
     <!-- Kumiko -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/kumiko-discord.png" alt="">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/kumiko-discord.png" alt="">
         <div>
             <h2>Kumiko Discord App</h2>
             <p>&gt An anime discord bot; without command bloat!</p>
@@ -63,7 +63,7 @@
     <div></div>
     <!-- taki mal api -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/taki-api.png" alt="">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/taki-api.png" alt="">
         <div>
             <h2>Taki-MAL-API-Wrapper</h2>
             <p>&gt A Client Authorized My Anime List API Wrapper</p>

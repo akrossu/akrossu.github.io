@@ -47,7 +47,7 @@
 
 <div class="flex relative mb-8">
     <div class="w-[112px] relative">
-        <img class="border-border border-solid border-2 absolute w-full h-full" src="/earth.gif" alt="">
+        <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="">
     </div>
     <div class="flex-1">
         <div class="ps-4 h-[60px] mb-4">

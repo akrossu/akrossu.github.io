@@ -20,7 +20,7 @@
 
 <div class="text-center w-72 mr-16" >
     <div class="flex justify-center items-center mb-4">
-        <img class="w-24" src="/iconcat.gif" alt="">
+        <img class="w-24" src="/assets/iconcat.gif" alt="">
     </div>
     <h2 class="mb-8 text-lg font-bold">website directory:</h2>
     <ul class="mb-4 list-none">

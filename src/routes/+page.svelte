@@ -20,7 +20,8 @@
     <p>&gt akross is a software engineering student based in northern virginia.</p>
     <p>&gt Mostly full-stack web development but he enjoy graphics programming too!</p>
 
-    <h3 class="inline-flex pt-4">// some of the technologies akross uses; the rest can be found in&nbsp</h3><a href="/about">[ akross:/about ]</a>
+    <div class="mt-4"></div>
+    <h3 class="inline">// some of the technologies akross uses; the rest can be found in&nbsp</h3><a href="/about">[ akross:/about ]</a>
     <div></div>
     <div class="inline-flex">
         <Shield title="java"></Shield>
@@ -39,5 +40,5 @@
 
     <!-- <p>&gt This project is what happens when portoflio and personal websites from the early netscape collide.</p> -->
     <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt=""></a> -->
-    <p class="pt-12">&gt This wonderful web design was made by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/insect.gif" alt="insect.christmas" draggable="false"></a></p>
+    <p class="pt-12">&gt This wonderful web design was made by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/assets/webring/insect.gif" alt="insect.christmas" draggable="false"></a></p>
 </div>
