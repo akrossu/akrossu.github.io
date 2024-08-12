@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'text':'#8cff1a',
-        'header':'#8f7ff7',
-        'link':'#ff8052',
-        'border':'#8cff1a',
+        text:'var(--color-text)',
+        header:'var(--color-header)',
+        link:'var(--color-link)',
+        border:'var(--color-border)',
       }
     },
   },
