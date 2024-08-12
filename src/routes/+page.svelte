@@ -15,6 +15,7 @@
     <Header></Header>
     <!-- body -->
     <p>&gt welcome to project akross</p>
+    <span class="md:hidden text-red-500">//<span class="uppercase">FIXME</span> This webpage is best viewed on a desktop client at a resolution &gt 768px</span>
     
     <h2 class="mt-4">about:</h2>
     <p>&gt akross is a software engineering student based in northern virginia.</p>
@@ -37,6 +38,9 @@
     <span>&gt for a full list of links, explore all of the external links here </span><a href="/external">[ akross:/external ]</a>
     <div></div>
     <span>&gt if you official business to dicuss, akross' email is always open </span><a href="mailto:zacharyt.merritt@gmail.com">[ email:/webmaster ]</a>
+
+    <h2 class="mt-8 pb-2">live feed of me coding:</h2>
+    <img class="ms-2" src="/assets/funny-cat.gif" alt="cat typing">
 
     <!-- <p>&gt This project is what happens when portoflio and personal websites from the early netscape collide.</p> -->
     <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt=""></a> -->
