@@ -24,12 +24,12 @@
     </div>
     <h2 class="mb-8 text-lg font-bold">website directory:</h2>
     <ul class="mb-4 list-none">
-        <li><h3>\\\ ᨐ creative projects ///</h3></li>
+        <li><h3>\\\ ᨐ creative corner ///</h3></li>
         <li><a href="/{pages.code}">[ akross:/{pages.code} ]</a>{#if title == `${pages.code}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
         <li>&gt akross' coding projects</li>
     </ul>
     <ul class="mb-4 list-none">
-        <li><h3>\\\ ᨐ personal pages ///</h3></li>
+        <li><h3>\\\ ᨐ digital garden ///</h3></li>
         <li><a href="/{pages.blog}">[ akross:/{pages.blog} ]</a>{#if title == `${pages.blog}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
         <li>&gt akross' random blogs</li>
         <li><a href="/{pages.gamelist}">[ akross:/{pages.gamelist} ]</a>{#if title == `${pages.gamelist}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>

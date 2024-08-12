@@ -1,12 +1,14 @@
 <script>
     import { onMount } from "svelte";
     export let title = "";
-    let pageTitle = "";
+    let pageTitle = ""; // why do i need dis i ponder to myself
+
+    /* THEME SELECTOR*/
     
+    /* DISCORD STATUS */
     let textStatus = "";
     let imageStatus = "";
     let songStatus = "";
-
     onMount(async () => {
         fetch("https://api.lanyard.rest/v1/users/282593436803268618")
         .then(response => response.json())
@@ -34,6 +36,7 @@
         });
     });
 
+    /* RANDOM COLOR */
     let color = "";
     const sleep = ms => new Promise(res => setTimeout(res, ms));
     const writeLoop = async () => {
@@ -53,21 +56,26 @@
         <div class="ps-4 h-[60px]">
             <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
             <div>
+                <a class="inline-block md:hidden" href="/">../home</a>
                 <span class="pl-4">current status: </span>
                 <img class="inline w-8" src="{imageStatus}" alt="">
-                <span class="font-sans">{textStatus}</span>
+                <span class="font-sans normal-case">{textStatus}</span>
             </div>
         </div>
         <div class="block">
-            <ul class="flex flex-1 justify-evenly mr-auto underline-links
-                        md:border-l-0 w-full md:max-w-fit md:justify-normal md:gap-4 md:px-4 py-2 text-lg font-bold
-                        border-border border-solid border-2">
-                <li><a href="/">home</a></li>
-                <li class="border-border border-solid border-l-2"></li>
+            <!-- <ul class="flex flex-1 justify-evenly mr-auto underline-links py-2
+                        md:border-l-0 w-full md:max-w-fit md:justify-normal md:gap-4 md:px-4 
+                        text-lg font-bold border-border border-solid border-2"> -->
+            <ul class="underline-links flex flex-1 justify-evenly py-2 [&>li]:px-5 max-w-fit
+                        text-lg font-bold border-border border-solid border-2 md:border-l-0">
+                <li class="hidden md:inline"><a href="/">home</a></li>
+                <div class="hidden md:inline border-border border-solid border-l-2"></div>
                 <li><a href="/creative">creative</a></li>
-                <li class="border-border border-solid border-l-2"></li>
+                <div class="border-border border-solid border-l-2"></div>
+                <li><a href="/garden">garden</a></li>
+                <div class="border-border border-solid border-l-2"></div>
                 <li><a href="/information">information</a></li>
-                <li class="border-border border-solid border-l-2"></li>
+                <div class="border-border border-solid border-l-2"></div>
                 <li><a href="/community">community</a></li>
             </ul>
         </div>
