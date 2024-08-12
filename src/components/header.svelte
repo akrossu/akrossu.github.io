@@ -55,18 +55,18 @@
     <div class="flex-1">
         <div class="ps-4 h-[60px]">
             <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
-            <div>
+            <div class="h-[26px]">
                 <a class="inline-block md:hidden" href="/">../home</a>
                 <span class="pl-4">current status: </span>
-                <img class="inline w-8" src="{imageStatus}" alt="">
+                <img class="inline w-8 h-auto" src="{imageStatus}" alt="">
                 <span class="font-sans normal-case">{textStatus}</span>
             </div>
         </div>
-        <div class="block">
+        <nav class="block">
             <!-- <ul class="flex flex-1 justify-evenly mr-auto underline-links py-2
                         md:border-l-0 w-full md:max-w-fit md:justify-normal md:gap-4 md:px-4 
                         text-lg font-bold border-border border-solid border-2"> -->
-            <ul class="underline-links flex flex-1 justify-evenly py-2 [&>li]:px-5 max-w-fit
+            <ul class="underline-links flex flex-1 justify-evenly py-2
                         text-lg font-bold border-border border-solid border-2 md:border-l-0">
                 <li class="hidden md:inline"><a href="/">home</a></li>
                 <div class="hidden md:inline border-border border-solid border-l-2"></div>
@@ -78,6 +78,6 @@
                 <div class="border-border border-solid border-l-2"></div>
                 <li><a href="/community">community</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
 </div>
