@@ -19,7 +19,7 @@
     <h2>businessy:</h2>
     <div class="ps-4 mb-4">
         <ul>
-            <li><a href="https://www.linkedin.com/in/zacharytmerritt/" target="_blank">[ external:/linkedin.com/zacharytmerritt ]</a></li>
+            <li><a href="https://www.linkedin.com/in/zachme/" target="_blank">[ external:/linkedin.com/zachme ]</a></li>
             <li class="mb-2">&gt akross' professional network </li>
             <li><a href="mailto:zacharyt.merritt@gmail.com">[ email:/webmaster ]</a></li>
             <li class="mb-2">&gt akross' business email</li>
