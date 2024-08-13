@@ -21,7 +21,7 @@
         <ul>
             <li><a href="https://www.linkedin.com/in/zachme/" target="_blank">[ external:/linkedin.com/zachme ]</a></li>
             <li class="mb-2">&gt akross' professional network </li>
-            <li><a href="mailto:zacharyt.merritt@gmail.com">[ email:/webmaster ]</a></li>
+            <li><a href="mailto:webmaster@akross.dev">[ email:/webmaster ]</a></li>
             <li class="mb-2">&gt akross' business email</li>
         </ul>
     </div>

@@ -37,7 +37,7 @@
     <h2 class="mt-4">contact:</h2>
     <span>&gt for a full list of links, explore all of the external links here </span><a href="/external">[ akross:/external ]</a>
     <div></div>
-    <span>&gt if you official business to dicuss, akross' email is always open </span><a href="mailto:zacharyt.merritt@gmail.com">[ email:/webmaster ]</a>
+    <span>&gt if you official business to dicuss, akross' email is always open </span><a href="mailto:webmaster@akross.dev">[ email:/webmaster ]</a>
 
     <h2 class="mt-8 pb-2">live feed of me coding:</h2>
     <img class="ms-2" src="/assets/funny-cat.gif" alt="cat typing">
