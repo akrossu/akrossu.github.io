@@ -5,7 +5,7 @@
 :root {
     --font-size: 0.8rem;
     --nav-max-width: 474px;
-    --content-width: 675px;
+    --content-max-width: 675px;
 }
 
 /* ------------------------------------------ */

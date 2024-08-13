@@ -9,10 +9,8 @@ export default {
         link:'var(--color-link)',
         border:'var(--color-border)'
       },
-      width: {
-        content: 'var(--content-width)'
-      },
       maxWidth: {
+        content: 'var(--content-max-width)',
         nav: 'var(--nav-max-width)',
       }
     },

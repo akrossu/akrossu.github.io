@@ -10,7 +10,7 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="w-content">
+<div class="max-w-content">
     <Header title={title}></Header>
     <!-- Content -->
     <p>&gt All of the information pertaining to the collective of akross ദ്ദി(⎚_⎚) </p>

@@ -11,7 +11,7 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="w-content">
+<div class="max-w-content">
     <Header title={title}></Header>
     <!-- Content -->
     <p class="mt-4 mb-2">&gt about the name.. it's confusing! I the webmasters' name is zach, but i often go by akross online- wait but this website is also titled project akross. so which is which? it's a culmination of both a first- and third-person collective somehow!</p>

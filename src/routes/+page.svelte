@@ -11,7 +11,7 @@
 </svelte:head>
 
 <Sidebar></Sidebar>
-<div class="w-content">
+<div class="max-w-[700px]">
     <Header></Header>
     <!-- body -->
     <p>&gt welcome to project akross</p>
