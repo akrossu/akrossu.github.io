@@ -43,6 +43,6 @@
     <img class="ms-2" src="/assets/funny-cat.gif" alt="cat typing">
 
     <!-- <p>&gt This project is what happens when portoflio and personal websites from the early netscape collide.</p> -->
-    <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt=""></a> -->
+    <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt="discord activity"></a> -->
     <p class="pt-12">&gt This wonderful web design was made by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/assets/webring/insect.gif" alt="insect.christmas" draggable="false"></a></p>
 </div>
