@@ -15,7 +15,7 @@
     <Header></Header>
     <!-- body -->
     <p>&gt welcome to project akross</p>
-    <span class="md:hidden text-red-500">//<span class="uppercase">FIXME</span> This webpage is best viewed on a desktop client at a resolution &gt 768px</span>
+    <span class="md:hidden text-red-400">//<span class="uppercase">FIXME</span> This webpage is best viewed on a desktop client at a resolution &gt 768px</span>
     
     <h2 class="mt-4">about:</h2>
     <p>&gt akross is a software engineering student based in northern virginia.</p>
