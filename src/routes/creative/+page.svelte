@@ -13,6 +13,7 @@
 <div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
+    <img class="w-full h-28 mb-4 object-cover" src="/assets/banner2-compressed.gif" alt="banner">
     <p>&gt this is where i host all of my creative projects! currently i've only posted my code stuff, but I'd like to have a page for photography/editing, room decor, and shader art- etc.</p>
 
     <h2 class="mt-4 inline-flex">Code:</h2>

@@ -13,6 +13,7 @@
 <div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
+    <img class="w-full h-28 mb-4 object-cover" src="/assets/banner-compressed1.gif" alt="banner">
     <p>&gt Welcome to my own digital garden! this is a very intimate space, so please be kind ♡(｡- ω -)</p>
 
     <h2 class="inline-flex mt-4">blog:</h2> <a href="/blog">[ akross:/blog ]</a>

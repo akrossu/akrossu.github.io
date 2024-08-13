@@ -13,6 +13,7 @@
 <div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
+    <img class="w-full h-28 mb-4 object-cover" src="/assets/banner1-compressed.gif" alt="banner">
     <p>&gt All of the information pertaining to the collective of akross ദ്ദി(⎚_⎚) </p>
 
     <h2 class="inline-flex mt-4">external:</h2> <a href="/external">[ akross:/external ]</a>
