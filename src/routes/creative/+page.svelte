@@ -10,7 +10,7 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-content">
+<div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
     <p>&gt this is where i host all of my creative projects! currently i've only posted my code stuff, but I'd like to have a page for photography/editing, room decor, and shader art- etc.</p>

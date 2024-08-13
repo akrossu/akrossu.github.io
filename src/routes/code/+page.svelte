@@ -11,7 +11,7 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-content">
+<div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
     <a href="https://github.com/akrossu" target="_blank">[ external:/github.com/akrossu ]</a>

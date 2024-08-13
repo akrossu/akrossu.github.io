@@ -10,7 +10,7 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-content">
+<div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
     <p class="pb-2">&gt here you'll find all of my external profiles and existances!</p>

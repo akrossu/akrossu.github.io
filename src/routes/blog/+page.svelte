@@ -33,7 +33,7 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-content">
+<div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
     {#each blogPosts as post}
