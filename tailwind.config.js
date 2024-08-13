@@ -7,7 +7,13 @@ export default {
         text:'var(--color-text)',
         header:'var(--color-header)',
         link:'var(--color-link)',
-        border:'var(--color-border)',
+        border:'var(--color-border)'
+      },
+      width: {
+        content: 'var(--content-width)'
+      },
+      maxWidth: {
+        nav: 'var(--nav-max-width)',
       }
     },
   },
