@@ -99,8 +99,5 @@
         <p>&gt Gar-Field Excellency Award in Computer Programming.</p>
     </div>
     <div class="mb-12"></div>
-    <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt=""></a> -->
-    
-    <!-- <p class="pt-12">&gt This wonderful web design was made by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/insect.gif" alt="insect.christmas" draggable="false"></a></p> -->
 </div>
 

@@ -40,5 +40,4 @@
         <SvelteMarkdown source={post}/>
         <div class="mb-24"></div>
     {/each}
-    <!-- <img src="http://textfiles.com/underconstruction/HeHeartlandValley1469underconstruction2.gif" alt=""> -->
 </div>
