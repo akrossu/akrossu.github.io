@@ -33,13 +33,12 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div>
+<div class="w-content">
     <Header title={title}></Header>
-    <div class="max-w-[675px]">
-        {#each blogPosts as post}
-            <SvelteMarkdown source={post}/>
-            <div class="mb-24"></div>
-        {/each}
-    </div>
+    <!-- Content -->
+    {#each blogPosts as post}
+        <SvelteMarkdown source={post}/>
+        <div class="mb-24"></div>
+    {/each}
     <!-- <img src="http://textfiles.com/underconstruction/HeHeartlandValley1469underconstruction2.gif" alt=""> -->
 </div>

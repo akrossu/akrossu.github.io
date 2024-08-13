@@ -17,9 +17,9 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-[675px]">
+<div class="w-content">
     <Header title={title}></Header>
-    
+    <!-- Content -->
     <p class="flex items-center">
         <button class="inline-flex" on:click={copy}>
             <img src="/assets/webring/akross.gif" alt="akross stamp" loading="lazy">

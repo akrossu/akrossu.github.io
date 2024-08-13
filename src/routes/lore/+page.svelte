@@ -10,8 +10,9 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-[675px]">
+<div class="w-content">
     <Header title={title}></Header>
+    <!-- Content -->
     <h2 class="mt-4">how the story goes:</h2>
     <p>&gt Prior to the publicization of radio frequencies in 1972 for extrateresstrial communication, a radio frequency was broadcast from a location unreachable by mankind. First read by a highly secret American association in 1960 under the title Project Akross, meant to communicate with the extrateresstrial.</p>
     <p>&gt This webpage you see before you was that first message, decoded after a semicentury from its original broadcast and reading.</p>

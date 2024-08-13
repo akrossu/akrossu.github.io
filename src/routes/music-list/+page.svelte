@@ -10,7 +10,8 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div class="max-w-[675px]">
+<div class="w-content">
     <Header title={title}></Header>
+    <!-- Content -->
     <img src="/assets/construction.gif" alt="under construction">
 </div>

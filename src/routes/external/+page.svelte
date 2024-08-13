@@ -10,9 +10,9 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-
-<div class="max-w-[675px]">
+<div class="w-content">
     <Header title={title}></Header>
+    <!-- Content -->
     <p class="pb-2">&gt here you'll find all of my external profiles and existances!</p>
     <a href="https://github.com/akrossu" target="_blank">[ external:/github.com/akrossu ]</a>
     <p class="mb-2">&gt Where you can find all of my public coding projects</p>

@@ -11,13 +11,14 @@
 </svelte:head>
 
 <Sidebar title={title}></Sidebar>
-<div>
+<div class="w-content">
     <Header title={title}></Header>
+    <!-- Content -->
     <a href="https://github.com/akrossu" target="_blank">[ external:/github.com/akrossu ]</a>
     <p class="mb-4">&gt Where you can find all of my public coding projects</p>
     <!-- Portfolio Website -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/personal-website.png" alt="">
+    <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/personal-website.png" alt="">
         <div>
             <h2>akrossu.github.io</h2>
             <p>&gt personal/portfolio website.</p>
