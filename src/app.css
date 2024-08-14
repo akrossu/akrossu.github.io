@@ -91,3 +91,67 @@ html {
 .underline-links a {
     text-decoration: underline;
 }
+
+/* -------------- FORUM ------------- */
+
+#HCB_comment_box {
+    font-family: monospace !important;
+    color:white !important;
+}
+
+#HCB_comment_box h3 {
+    font-size: 1.5rem /* 24px */;
+    font-weight: bold !important;
+}
+
+.home-desc,
+.hcb-icon,
+.hcb-comment-tb {
+    display: none;
+}
+
+#hcb_form_name,
+#hcb_form_website,
+#hcb_form_content {
+    padding: 0.5rem !important;
+    border: 2px var(--color-border) solid;
+    background: black;
+    width: 100%;
+}
+
+#HCB_comment_box input,
+#HCB_comment_box textarea {
+    font-family: monospace !important;
+}
+
+#hcb_form_name_container {
+    display: flex;
+}
+
+#HCB_comment_box h3::after {
+    content: ":";
+}
+
+.hcb-wrapper-half #hcb_form_name_container::before {
+    padding-right: 0.5rem;
+    line-height: 32px;
+    width: 75px;
+}
+.hcb-wrapper-half #hcb_form_name_container:has([name="name"])::before {
+    content: "name:";
+}
+.hcb-wrapper-half #hcb_form_name_container:has([name="website"])::before {
+    content: "website:";
+}
+
+.hcb-comment-body {
+    text-transform:none;
+}
+
+#HCB_comment_form_box button,
+.submit {
+    font-family: monospace !important;
+    background: none !important;
+    border: 2px var(--color-border) solid !important;
+    color: white !important;
+}
