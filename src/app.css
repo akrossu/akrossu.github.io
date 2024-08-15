@@ -141,16 +141,12 @@ html {
     width: 75px;
 }
 .hcb-wrapper-half #hcb_form_name_container:has([name="name"])::before {
-    content: "name:";
+    content: "name* :";
 }
 .hcb-wrapper-half #hcb_form_name_container:has([name="website"])::before {
     content: "website:";
 }
 
-.hcb-comment-body {
-    text-transform: none;
-    font-size: var(--font-size) !important;
-}
 
 #HCB_comment_form_box button,
 .submit {
@@ -159,4 +155,14 @@ html {
     backdrop-filter: blur(4px);
     border: 1px var(--color-border) solid !important;
     color: white !important;
+}
+
+.hcb-comment-body {
+    text-transform: none;
+    font-size: var(--font-size) !important;
+}
+
+#comments_list div[id*='comment'] {
+    border-left: 1px var(--color-border) solid;
+    padding-left: 1rem;
 }
