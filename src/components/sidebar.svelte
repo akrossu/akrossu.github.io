@@ -14,7 +14,8 @@
         external:'external',
         about:'about',
         lore:'lore',
-        webring:'webring'
+        webring:'webring',
+        guestbook: 'guestbook',
     };
 </script>
 
@@ -50,6 +51,8 @@
         <li><h3>\\\ ᨐ community ///</h3></li>
         <li><a href="/{pages.webring}">[ Akross:/{pages.webring} ]</a>{#if title == `${pages.webring}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
         <li>&gt akross' web friends!</li>
+        <li><a href="/{pages.guestbook}">[ Akross:/{pages.guestbook} ]</a>{#if title == `${pages.guestbook}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
+        <li>&gt record your visit</li>
         <li><a class="normal-case" href="https://www.discord.gg/sczXWkDsZ6" target="_blank">[ discord.gg/sczXWkDsZ6 ]</a></li>
         <li>&gt akross & community discord</li>
     </ul>

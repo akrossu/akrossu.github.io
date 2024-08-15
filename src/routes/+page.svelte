@@ -44,35 +44,9 @@
     <!-- <h2 class="mt-8 pb-2">live feed of me coding:</h2>
     <img class="ms-2" src="/assets/funny-cat.gif" alt="cat typing"> -->
 
-    <!-- begin wwww.htmlcommentbox.com -->
-    <div id="HCB_comment_box" class="text-text">&gt loading comments...</div>
-    <script type="text/javascript" id="hcb">
-        if(!window.hcb_user) { hcb_user={}; }
-        hcb_user.PAGE="https://akross.dev/";
-        (function() {
-            var s = document.createElement("script"),
-            l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"),
-            h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");
-            s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+","%2B") + 
-                "&mod=%241%24wq1rdBcg%24hkIBO3klmY8h3KTfjFGwQ." + "&opts=17558&num=10&ts=1723579112442");
-            if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})
-        ();
-
-        // onMount(() => {
-        //     document.querySelector('admin-link').style.display = 'none';
-        // });
-    </script>
-    <!-- end www.htmlcommentbox.com -->
+    
 
     <!-- <p>&gt This project is what happens when portoflio and personal websites from the early netscape collide.</p> -->
     <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt="discord activity"></a> -->
     <p class="my-8 pb-16">&gt This wonderful web design was made by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/assets/webring/insect.gif" alt="insect.christmas" draggable="false"></a></p>
 </div>
-
-<style>
-    #HCB_comment_box {
-        margin-top: 1rem;
-        color: #FFFFFF;
-        height: auto;
-    }
-</style>
