@@ -3,9 +3,10 @@
 
 i'm not really sure what to write here. this is mostly a test to see if my code is working.
 
+actually, i'd like to note a little bit about how i'v written this website as it's kinda cool!
+
 <br>
 
-actually, i'd like to note a little bit about how i'v written this website as it's kinda cool!
 ## technologies i'm using:
 ### // svelte
 an alternative to something like react that in my opini- ahem; objectively is a better developer experience that makes it by far my favorite framework to use.
