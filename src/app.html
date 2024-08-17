@@ -23,13 +23,13 @@
 	<!-- Cavas Script -->
 	<script>
 		function main() {
+			if (window.innerWidth <= 768) return; // fixes mobile touch blocking
+
 			// Get A WebGL context
 			/** @type {HTMLCanvasElement} */
 			const canvas = document.getElementById('glcanvas');
 			const gl = canvas.getContext("webgl");
-			if (!gl) {
-				return;
-			}
+			if (!gl) return;
 
 			const vs = `
 				// an attribute will receive data from a buffer
