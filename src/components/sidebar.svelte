@@ -16,6 +16,7 @@
         lore:'lore',
         webring:'webring',
         guestbook: 'guestbook',
+        imageboard: 'photo-wall'
     };
 </script>
 
@@ -28,6 +29,8 @@
         <li><h3>\\\ ᨐ creative corner ///</h3></li>
         <li><a href="/{pages.code}">[ akross:/{pages.code} ]</a>{#if title == `${pages.code}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
         <li>&gt akross' coding projects</li>
+        <li><a href="/{pages.imageboard}">[ akross:/{pages.imageboard} ]</a>{#if title == `${pages.imageboard}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
+        <li>&gt monthly photography</li>
     </ul>
     <ul class="mb-4 list-none">
         <li><h3>\\\ ᨐ digital garden ///</h3></li>
