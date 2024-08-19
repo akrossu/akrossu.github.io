@@ -1,6 +1,3 @@
-## title: "welcome to my personal blog!! :3"
-## date: "08-08-2024"
-
 i'm not really sure what to write here. this is mostly a test to see if my code is working.
 
 actually, i'd like to note a little bit about how i've written this website as it's kinda cool!
@@ -36,7 +33,3 @@ I found this website [\[ external:/htmlcommentbox \]](https://www.htmlcommentbox
 
 ## anyways
 thank you if you're reading this, vist [\[ akross:/lore \]](https://akrossu.github.io/lore/) if you haven't already and sign the guestbook [\[ akross:/guestbook \]](https://akrossu.github.io/guestbook/) on your way out if you'd like to have your stamp included or say hi! any questions about how i have things setup are always welcome too!!
-
-<br>
-
-<sup>updated: 15-08-2024</sup>
