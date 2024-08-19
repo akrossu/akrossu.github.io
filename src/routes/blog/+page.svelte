@@ -6,23 +6,34 @@
 
     const title = "blog"
 
+    let fileNames = [];
+
     let blogTitles = [];
-    let blogPosts = [];
-    let post = "";
+    let blogDates = [];
+    let blogModifiedDates = [];
+
+    let blogContent = [];
 
     onMount(async () => {
-        await fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog.txt`)
-        .then(response => response.text())
+        // Fetch file names
+        await fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog.json`)
+        .then(response => response.json())
         .then(data => {
-            blogTitles = data.split('\n');
-            blogTitles.length--;
+            data.forEach(element => {
+                fileNames.push(element.fileName);
+                blogTitles.push(element.title);
+                blogDates.push(element.date);
+                blogModifiedDates.push(element.modifiedDate);
+                console.log(element.title + ": " + element.modifiedDate);
+            });
         });
         
-        for(let i = 0; i < blogTitles.length; i++) {
-            fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog-posts/${blogTitles[i]}.md`)
+        // For each file name, 
+        for(let i = 0; i < fileNames.length; i++) {
+            fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog-posts/${fileNames[i]}.md`)
             .then(response => response.text())
             .then(data => {
-                blogPosts[i] = data.toString();
+                blogContent[i] = data.toString();
             });
         }
     });
@@ -36,8 +47,17 @@
 <div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
-    {#each blogPosts as post}
-        <SvelteMarkdown source={post}/>
-        <div class="mb-24"></div>
+    {#each blogContent as post, index}
+        <details open={index == 0}>
+            <summary class="mb-2">
+                <h2 class="inline-block ps-2 align-sub">title: "{blogTitles[index]}"</h2>
+                <h2 class="ms-6 align-sub">date: "{blogDates[index]}"</h2>
+            </summary>
+            <SvelteMarkdown source={post}/>
+            {#if blogModifiedDates[index] != ""}
+                <p class="mt-4">updated: {blogModifiedDates[index]}</p>
+            {/if}
+            <div class="mb-16"></div>
+        </details>
     {/each}
 </div>
