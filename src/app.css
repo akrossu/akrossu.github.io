@@ -8,54 +8,7 @@
     --content-max-width: 675px;
 }
 
-/* ------------------------------------------ */
-/*               DEFAULT LAYOUT               */
-/* ------------------------------------------ */
-@layer base {
-    html[data-theme='default'] {
-        --color-text: #8cff1a;
-        --color-header: #8f7ff7;
-        --color-link: #ff8052;
-        --color-border: #8cff1a;
-    }
-
-    html[data-theme='default'] h2 {
-        font-size: 1.5rem /* 24px */;
-        line-height: 2rem /* 32px */;
-        font-weight: 700;
-    }
-    
-    html[data-theme='default'] h3 {
-        font-weight: 900;
-    }
-}
-
-/* ------------------------------------------ */
-/*            ACCESSIBILITY LAYOUT            */
-/* ------------------------------------------ */
-@layer base {
-    html[data-theme='monochromatic'] {
-        --color-text: #ffffff;
-        --color-header: #ffffff;
-        --color-link: #ffffff;
-        --color-border: #ffffff;
-    }
-}
-
-/* ------------------------------------------ */
-/*             CUSTOM TEST LAYOUT             */
-/* ------------------------------------------ */
-@layer base {
-    html[data-theme='CUSTOM'] {
-        --color-text: #ffffff;
-        --color-header: #E2E2B6;
-        --color-link: #6EACDA;
-        --color-border: #E2E2B6;
-    }
-}
-
 /* --------------------- GLOBAL CSS --------------------- */
-
 
 h3, h2 {
     color: theme(colors.header);
