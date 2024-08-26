@@ -1,0 +1,7 @@
+html[data-theme='CUSTOM'] {
+    --color-text: #ffffff;
+    --color-header: #E2E2B6;
+    --color-link: #6EACDA;
+    --color-border: #E2E2B6;
+}
+
