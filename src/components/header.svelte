@@ -2,8 +2,6 @@
     import { onMount } from "svelte";
     export let title = "";
     let pageTitle = ""; // why do i need dis i ponder to myself
-
-    /* THEME SELECTOR*/
     
     /* DISCORD STATUS */
     let textStatus = "";
@@ -46,6 +44,20 @@
         }
     }
     writeLoop();
+
+    let currentTheme = "default";
+    const themes = ["default", "monochromatic", "CUSTOM"];
+    let index = 1;
+    function themeSwitcher() {
+        const themeIndex = (index++) % themes.length;
+        const newTheme = themes[themeIndex];
+        console.log(newTheme);
+
+        const htmlElement = document.documentElement;
+        htmlElement.setAttribute('data-theme', newTheme);
+
+        currentTheme = newTheme;
+    }
 </script>
 
 <div class="flex relative mb-8">
@@ -54,7 +66,9 @@
     </div>
     <div class="flex-1">
         <div class="ps-4 h-[60px]">
-            <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
+            <button on:click={themeSwitcher}>
+                <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
+            </button>
             <div class="h-[26px]">
                 <a class="inline-block md:hidden" href="/">../home</a>
                 <span class="pl-4">current status: </span>
@@ -63,9 +77,6 @@
             </div>
         </div>
         <nav class="block">
-            <!-- <ul class="flex flex-1 justify-evenly mr-auto underline-links py-2
-                        md:border-l-0 w-full md:max-w-fit md:justify-normal md:gap-4 md:px-4 
-                        text-lg font-bold border-border border-solid border-2"> -->
             <ul class="underline-links flex flex-1 justify-evenly py-2 max-w-nav
                         text-lg font-bold border-border border-solid border-2 md:border-l-0">
                 <li class="hidden md:inline"><a href="/">home</a></li>
