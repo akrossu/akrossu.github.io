@@ -19,7 +19,7 @@
     
     <h2 class="mt-4">about:</h2>
     <p>&gt hii! i'm a software engineering student based in northern virginia.</p>
-    <p>&gt Mostly full-stack web development but graphics programming is pretty color too</p>
+    <p>&gt Mostly full-stack web development but graphics programming is pretty cool too :3</p>
 
     <div class="mt-4"></div>
     <h3 class="inline">// some of the technologies I use; the rest can be found in&nbsp</h3><a href="/about">[ akross:/about ]</a>
