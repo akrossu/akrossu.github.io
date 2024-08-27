@@ -18,11 +18,11 @@
     <span class="md:hidden text-red-400">//<span class="uppercase">FIXME</span> This webpage is best viewed on a desktop client at a resolution &gt 768px</span>
     
     <h2 class="mt-4">about:</h2>
-    <p>&gt akross is a software engineering student based in northern virginia.</p>
-    <p>&gt Mostly full-stack web development but he enjoy graphics programming too!</p>
+    <p>&gt hii! i'm a software engineering student based in northern virginia.</p>
+    <p>&gt Mostly full-stack web development but graphics programming is pretty color too</p>
 
     <div class="mt-4"></div>
-    <h3 class="inline">// some of the technologies akross uses; the rest can be found in&nbsp</h3><a href="/about">[ akross:/about ]</a>
+    <h3 class="inline">// some of the technologies I use; the rest can be found in&nbsp</h3><a href="/about">[ akross:/about ]</a>
     <div></div>
     <div class="inline-flex">
         <Shield title="java"></Shield>
@@ -37,7 +37,7 @@
     <h2 class="mt-8">contact:</h2>
     <span>&gt for a full list of links, explore all of the external links here </span><a href="/external">[ akross:/external ]</a>
     <div></div>
-    <span>&gt if you official business to dicuss, akross' email is always open </span><a href="mailto:webmaster@akross.dev">[ email:/webmaster ]</a>
+    <span>&gt if you official business to dicuss, my email is always open </span><a href="mailto:webmaster@akross.dev">[ email:/webmaster ]</a>
 
     <div class="my-8"></div>
 

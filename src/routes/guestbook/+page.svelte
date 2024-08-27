@@ -13,7 +13,7 @@
 <div class="max-w-content w-full">
     <Header title={title}></Header>
 
-    <p>&gt hii thank you for visiting!! feel free to leave a footprint here for others to find your site or to simply mark where you've been on your journey.</p>
+    <p>&gt thank you for visiting!! feel free to leave your mark here for others to find your site and have a nice journey :3</p>
     <h3 class="mb-4">// please be courteous and kind, comments are manually approved.</h3>
 
     <!-- begin wwww.htmlcommentbox.com -->
