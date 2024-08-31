@@ -39,6 +39,21 @@ html {
     text-transform: lowercase;
 }
 
+blockquote {
+    padding-left: 1rem;
+    position: relative;
+}
+
+blockquote::before {
+    content: "> ";
+    position: absolute;
+    left: 0;
+}
+
+blockquote p {
+    display: inline;
+}
+
 /* ------------ Classes ------------ */
 
 .underline-links a {
