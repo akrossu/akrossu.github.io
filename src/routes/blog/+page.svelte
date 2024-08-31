@@ -54,7 +54,7 @@
                 <h2 class="ms-6 align-sub">date: "{blogDates[index]}"</h2>
             </summary>
             <SvelteMarkdown source={post}/>
-            {#if blogModifiedDates[index] != ""}
+            {#if blogModifiedDates[index] != undefined}
                 <p class="mt-4">updated: {blogModifiedDates[index]}</p>
             {/if}
             <div class="mb-16"></div>
