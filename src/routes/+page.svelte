@@ -37,14 +37,12 @@
     <h2 class="mt-8">contact:</h2>
     <span>&gt for a full list of links, explore all of the external links here </span><a href="/external">[ akross:/external ]</a>
     <div></div>
-    <span>&gt if you official business to dicuss, my email is always open </span><a href="mailto:webmaster@akross.dev">[ email:/webmaster ]</a>
+    <span>&gt if you have official business to dicuss, my email is always open </span><a href="mailto:webmaster@akross.dev">[ email:/webmaster ]</a>
 
     <div class="my-8"></div>
 
     <!-- <h2 class="mt-8 pb-2">live feed of me coding:</h2>
     <img class="ms-2" src="/assets/funny-cat.gif" alt="cat typing"> -->
-
-    
 
     <!-- <p>&gt This project is what happens when portoflio and personal websites from the early netscape collide.</p> -->
     <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt="discord activity"></a> -->

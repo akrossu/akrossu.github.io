@@ -23,5 +23,5 @@
     <p>&gt record your visit! jot down a note and include your website if you have one!</p>
 
     <h2 class="inline-flex mt-4">discord:</h2> <a class="normal-case" href="https://www.discord.gg/sczXWkDsZ6" target="_blank">[ discord.gg/sczXWkDsZ6 ]</a>
-    <p>&gt vidoe gams and general hang outs, come visit!</p>
+    <p>&gt vidoe gams and general hang outs, everyone welcome (＾▽＾)</p>
 </div>

@@ -23,10 +23,11 @@
     </div>
 
     <h2 class="mt-4">Plan to play games</h2>
-    <h3>// Short and cute games ( &lt;10 hours )</h3>
+    <h3>// Short and cute games ( &lt 10 hours )</h3>
     <ul class="ps-4">
         <li>&gt road 96</li>
         <li>&gt a short hike</li>
+        <li>&gt Before Your Eyes</li>
         <li>&gt stray</li>
         <li>&gt fnaf: into the pit</li>
         <li>&gt VLADiK BRUTAL</li>
@@ -35,14 +36,14 @@
     <h3>// medium length games ( 10 - 40 hours )</h3>
     <ul class="ps-4">
         <li>&gt half-life alyx</li>
-        <li>&gt finaly fantasy 10</li>
+        <li>&gt final fantasy 10</li>
         <li>&gt still wakes the deep</li>
         <li>&gt nine sols</li>
     </ul>
-    <h3>// longggg games ( &lt 40+ hours )</h3>
+    <h3>// longggg games ( &gt 40 hours )</h3>
     <ul class="ps-4">
         <li>&gt cyberpunk</li>
-        <li>&gt read dead redemption 2</li>
+        <li>&gt red dead redemption 2</li>
         <li>&gt persona series pfffffft</li>
     </ul>
 
