@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+
     export let title = "";
     let pageTitle = ""; // why do i need dis i ponder to myself
     
@@ -45,18 +46,19 @@
     }
     writeLoop();
 
-    let currentTheme = "default";
+    
     const themes = ["default", "monochromatic", "CUSTOM"];
-    let index = 1;
+    let index = 0;
+    let newTheme;
+
     function themeSwitcher() {
-        const themeIndex = (index++) % themes.length;
-        const newTheme = themes[themeIndex];
-        console.log(newTheme);
+        index += 1;
+        let themeIndex = index % themes.length;
+        newTheme = themes[themeIndex];
+        console.warn("This is an experimental feature, I apologize for any bugs you may encounter");
 
-        const htmlElement = document.documentElement;
+        let htmlElement = document.documentElement;
         htmlElement.setAttribute('data-theme', newTheme);
-
-        currentTheme = newTheme;
     }
 </script>
 
