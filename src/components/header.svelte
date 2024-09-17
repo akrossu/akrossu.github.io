@@ -1,10 +1,13 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount } from 'svelte';
 
     export let title = "";
     let pageTitle = ""; // why do i need dis i ponder to myself
     
     /* DISCORD STATUS */
+    const defaultImage = "https://cdn.discordapp.com/emojis/895005656086626415.gif";
+    const defaultStatus = "away from keyboard"
+
     let textStatus = "";
     let imageStatus = "";
     let songStatus = "";
@@ -12,6 +15,12 @@
         fetch("https://api.lanyard.rest/v1/users/282593436803268618")
         .then(response => response.json())
         .then(data => {
+            if (data.data.discord_status == "offline") {
+                imageStatus = defaultImage;
+                textStatus = defaultStatus;
+                return;
+            }
+ 
             const activities = data.data.activities;
             for(let i = 0; i < activities.length; i++) {
                 if (activities[i].name == "Custom Status") {
