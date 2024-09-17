@@ -76,15 +76,15 @@
         <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="">
     </div>
     <div class="flex-1">
-        <div class="ps-4 h-[60px]">
+        <div class="ps-4 md:h-[60px]">
             <button on:click={themeSwitcher}>
                 <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>[ Home@akross:/{title} ] <span style="{color}">ᨐ</span></h1>
             </button>
-            <div class="h-[26px]">
+            <div class="md:h-[26px]">
                 <a class="inline-block md:hidden" href="/">../home</a>
                 <span class="pl-4">current status: </span>
                 <img class="inline w-8 h-auto" src="{imageStatus}" alt="">
-                <span class="font-sans normal-case">{textStatus}</span>
+                <span class="normal-case">{textStatus}</span>
             </div>
         </div>
         <nav class="block">
