@@ -1,9 +1,6 @@
-if (window.innerWidth <= 768) return;
-
 'use strict';
 
 const canvas = document.getElementsByTagName('canvas')[0];
-// const gl = canvas.getContext("webgl");
 const gl = getWebGLContext(canvas);
 
 const vertexShaderSource = compileShader(gl.VERTEX_SHADER, `
@@ -137,12 +134,7 @@ function setMousePosition(e) {
     mouseX = e.clientX - rect.left;
     mouseY = rect.height - (e.clientY - rect.top) - 1;  // bottom is 0 in WebGL
 }
-
 inputElem.addEventListener('mousemove', setMousePosition);
-inputElem.addEventListener('touchmove', (e) => {
-    e.preventDefault();
-    setMousePosition(e.touches[0]);
-}, {passive: false});
 
 let requestId;
 function requestFrame() {
@@ -205,19 +197,13 @@ function render(now) {
 }
 
 function getWebGLContext (canvas) {
-    const params = { alpha: true, depth: false, stencil: false, antialias: false, preserveDrawingBuffer: false };
-
-    let gl = canvas.getContext('webgl2', params);
+    let gl = canvas.getContext('webgl2');
+    
     const isWebGL2 = !!gl;
-
-    if (!isWebGL2)
-        gl = canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params);
-
-    if (isWebGL2)
-        gl.getExtension('EXT_color_buffer_float');
-
+    if (!isWebGL2) gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    
     gl.clearColor(0.0, 0.0, 0.0, 1.0);
-
+    
     return gl;
 }
 
