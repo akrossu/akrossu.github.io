@@ -127,6 +127,7 @@ blockquote p {
 
 .hcb-comment-body {
     text-transform: none;
+    display: block;
     font-size: var(--font-size) !important;
 }
 
