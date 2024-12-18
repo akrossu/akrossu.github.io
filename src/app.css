@@ -135,3 +135,12 @@ blockquote p {
     border-left: 1px var(--color-border) solid;
     padding-left: 1rem;
 }
+
+/* SIDEBAR */
+/* #sidebar-border::before, #sidebar-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1px;
+    background: black;
+} */
