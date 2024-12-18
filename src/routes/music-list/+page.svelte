@@ -50,9 +50,25 @@
         else nowPlayingEl.style.display = 'block';
     }
 
+    let topWeekArr = null;
+    let topMonthArr = null;
+    let topYearArr = null;
+    let topOverallArr = null;
+    
     async function getTopTracks(period) {
-        let jsonResp = await fetchLastFmData('user.getTopTracks', 10, period);
-        songsArr = jsonResp.toptracks.track;
+        if (period === '7day' && topWeekArr != null) songsArr = topWeekArr;
+        else if (period === '1month' && topMonthArr != null) songsArr = topMonthArr;
+        else if (period === '12month' && topYearArr != null) songsArr = topYearArr;
+        else if (period === 'overall' && topOverallArr != null) songsArr = topOverallArr;
+        else {
+            let jsonResp = await fetchLastFmData('user.getTopTracks', 10, period);
+            songsArr = jsonResp.toptracks.track;
+
+            if (period === '7day') topWeekArr = songsArr;
+            else if (period === '1month') topMonthArr = songsArr;
+            else if (period === '12month') topYearArr = songsArr;
+            else if (period === 'overall') topOverallArr = songsArr;
+        }
     }
 
     async function getTopArtists() {
