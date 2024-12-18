@@ -4,19 +4,21 @@
     import Shield from '$components/shield.svelte';
 
     let color = "";
+    const title = 'home';
 </script>
 
 <svelte:head>
     <title>[ home@akross:/ ]</title>
 </svelte:head>
 
-<Sidebar></Sidebar>
-<div class="max-w-[700px]">
+<Sidebar title={title}></Sidebar>
+<div class="max-w-content w-full">
     <Header></Header>
     <!-- body -->
     <p>&gt welcome to project akross</p>
-    <span class="md:hidden text-red-400">//<span class="uppercase">FIXME</span> This webpage is best viewed on a desktop client at a resolution &gt 768px</span>
     
+    <!-- TODO: ADD UPDATE SECTION -->
+
     <h2 class="mt-4">about:</h2>
     <p>&gt hii! i'm a software engineering student based in northern virginia.</p>
     <p>&gt Mostly full-stack web development but graphics programming is pretty cool too :3</p>
