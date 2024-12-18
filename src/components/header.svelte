@@ -10,7 +10,7 @@
 
     let textStatus = "";
     let imageStatus = "";
-    let songStatus = "";
+
     onMount(async () => {
         fetch("https://api.lanyard.rest/v1/users/282593436803268618")
         .then(response => response.json())
