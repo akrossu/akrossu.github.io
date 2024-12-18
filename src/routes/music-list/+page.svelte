@@ -7,7 +7,7 @@
 
     // yes, i know my api keys are public 0_0
     const LASTFM_APIKEY = 'b5d288ff2d78a6c4e32cfd6d97d2a67e';
-    const baseUrl = 'http://ws.audioscrobbler.com/2.0/';
+    const baseUrl = 'https://ws.audioscrobbler.com/2.0/';
 
     let loadingEl;
     let curListening;
