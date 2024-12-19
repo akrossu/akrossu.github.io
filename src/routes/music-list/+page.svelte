@@ -13,7 +13,8 @@
     let curListening;
     let nowPlayingEl;
 
-    let selected = 'all-time';
+    let songSelected = 'all-time';
+    let artistSelected = 'all-time';
 
     const title = 'music-list';
     let songTitle = '';
@@ -54,6 +55,11 @@
     let topMonthArr = null;
     let topYearArr = null;
     let topOverallArr = null;
+
+    let topArtistWeekArr = null;
+    let topArtistMonthArr = null;
+    let topArtistYearArr = null;
+    let topArtistOverallArr = null;
     
     async function getTopTracks(period) {
         if (period === '7day' && topWeekArr != null) songsArr = topWeekArr;
@@ -71,9 +77,20 @@
         }
     }
 
-    async function getTopArtists() {
-        let jsonResp = await fetchLastFmData('user.getTopArtists', 8);
-        artistsArr = jsonResp.topartists.artist;
+    async function getTopArtists(period) {
+        if (period === '7day' && topArtistWeekArr != null) artistsArr = topArtistWeekArr;
+        else if (period === '1month' && topArtistMonthArr != null) artistsArr = topArtistMonthArr;
+        else if (period === '12month' && topArtistYearArr != null) artistsArr = topArtistYearArr;
+        else if (period === 'overall' && topArtistOverallArr != null) artistsArr = topArtistOverallArr;
+        else {
+            let jsonResp = await fetchLastFmData('user.getTopArtists', 8, period);
+            artistsArr = jsonResp.topartists.artist;
+            
+            if (period === '7day') topArtistWeekArr = artistsArr;
+            else if (period === '1month') topArtistMonthArr = artistsArr;
+            else if (period === '12month') topArtistYearArr = artistsArr;
+            else if (period === 'overall') topArtistOverallArr = artistsArr;
+        }
     }
     
     // hacky song updating
@@ -117,10 +134,6 @@
             throw e;
         }
     }
-
-    function setSelected(item) {
-        selected = item;
-    }
 </script>
 
 <svelte:head>
@@ -142,38 +155,79 @@
         <div class="inline-flex w-full pr-2 md:pr-4">
             <h2 class="mr-auto">top tracks</h2>
             <span class="space-x-4">
-                <button class:active={selected === 'week'}
+                <button class:active={songSelected === 'week'}
                     on:click={() => {getTopTracks('7day')}}
-                    on:click={() => (selected = 'week')}>
+                    on:click={() => (songSelected = 'week')}>
                         week
                 </button>
-                <button class:active={selected === 'month'}
+                <button class:active={songSelected === 'month'}
                     on:click={() => getTopTracks('1month')}
-                    on:click={() => (selected = 'month')}>
+                    on:click={() => (songSelected = 'month')}>
                         month
                 </button>
-                <button class:active={selected === 'year'}
+                <button class:active={songSelected === 'year'}
                     on:click={() => getTopTracks('12month')}
-                    on:click={() => (selected = 'year')}>
+                    on:click={() => (songSelected = 'year')}>
                         year
                 </button>
-                <button class:active={selected === 'all-time'}
+                <button class:active={songSelected === 'all-time'}
                     on:click={() => getTopTracks('overall')}
-                    on:click={() => (selected = 'all-time')}>
+                    on:click={() => (songSelected = 'all-time')}>
                         all-time
                 </button>
             </span>
         </div>
         {#each songsArr as song, i}
-            <div class="my-4">
-                <p>
+            <div class="px-4 my-3 w-full inline-flex">
+                <div class="mr-auto">
                     <span class="inline-block  w-9">{++i}</span>
                     <!-- api images don't work :/ <img class="inline-flex" src={song.image[0]["#text"]} alt=""> -->
                     <span class="inline-block align-middle">
                         <a href={song.url} target="_blank">{song.name}</a>
                         <p>{song.artist.name}</p>
                     </span>
-                </p>
+                </div>
+                <span class="pr-2 md:pr-4 align-middle my-auto">{song.playcount} plays</span>
+            </div>
+        {/each}
+    </div>
+    <div class="mt-4">
+        <div class="inline-flex w-full pr-2 md:pr-4">
+            <h2 class="mr-auto">top artists</h2>
+            <span class="space-x-4">
+                <button class:active={songSelected === 'week'}
+                    on:click={() => {getTopArtists('7day')}}
+                    on:click={() => (songSelected = 'week')}>
+                        week
+                </button>
+                <button class:active={songSelected === 'month'}
+                    on:click={() => getTopArtists('1month')}
+                    on:click={() => (songSelected = 'month')}>
+                        month
+                </button>
+                <button class:active={songSelected === 'year'}
+                    on:click={() => getTopArtists('12month')}
+                    on:click={() => (songSelected = 'year')}>
+                        year
+                </button>
+                <button class:active={songSelected === 'all-time'}
+                    on:click={() => getTopArtists('overall')}
+                    on:click={() => (songSelected = 'all-time')}>
+                        all-time
+                </button>
+            </span>
+        </div>
+        {#each artistsArr as artist, i}
+            <div class="px-4 my-4 w-full inline-flex">
+                <div class="mr-auto">
+                    <span class="inline-block  w-9">{++i}</span>
+                    <!-- api images don't work :/ <img class="inline-flex" src={song.image[0]["#text"]} alt=""> -->
+                    <span class="inline-block align-middle">
+                        <a href={artist.url} target="_blank">{artist.name}</a>
+                        <!-- <p>{song.artist.name}</p> -->
+                    </span>
+                </div>
+                <span class="pr-2 md:pr-4 align-middle my-auto">{artist.playcount} plays</span>
             </div>
         {/each}
     </div>
