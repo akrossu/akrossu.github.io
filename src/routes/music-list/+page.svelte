@@ -195,24 +195,24 @@
         <div class="inline-flex w-full pr-2 md:pr-4">
             <h2 class="mr-auto">top artists</h2>
             <span class="space-x-4">
-                <button class:active={songSelected === 'week'}
+                <button class:active={artistSelected === 'week'}
                     on:click={() => {getTopArtists('7day')}}
-                    on:click={() => (songSelected = 'week')}>
+                    on:click={() => (artistSelected = 'week')}>
                         week
                 </button>
-                <button class:active={songSelected === 'month'}
+                <button class:active={artistSelected === 'month'}
                     on:click={() => getTopArtists('1month')}
-                    on:click={() => (songSelected = 'month')}>
+                    on:click={() => (artistSelected = 'month')}>
                         month
                 </button>
-                <button class:active={songSelected === 'year'}
+                <button class:active={artistSelected === 'year'}
                     on:click={() => getTopArtists('12month')}
-                    on:click={() => (songSelected = 'year')}>
+                    on:click={() => (artistSelected = 'year')}>
                         year
                 </button>
-                <button class:active={songSelected === 'all-time'}
+                <button class:active={artistSelected === 'all-time'}
                     on:click={() => getTopArtists('overall')}
-                    on:click={() => (songSelected = 'all-time')}>
+                    on:click={() => (artistSelected = 'all-time')}>
                         all-time
                 </button>
             </span>
