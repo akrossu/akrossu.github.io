@@ -15,7 +15,7 @@
     <Header title={title}></Header>
     <!-- Content -->
     <p class="mt-4 mb-2">&gt About the name.. it's confusing! I webmaster's name is Zach, but i often go by akross online- wait, but this website is also titled project akross. So which is which? It's a culmination of both a first- and third-person collective somehow!</p>
-    <span>&gt if you're interested in the reasoning, vist </span><a href="/lore">[ akross:/lore ]</a>!
+    <span>&gt if you're interested in the reasoning, visit </span><a href="/lore">[ akross:/lore ]</a>!
     <p></p>
     
     <p class="mt-8">&gt since 2015 these are some of the skills I've built up being a solo developer</p>

@@ -13,7 +13,7 @@
 <div class="max-w-content w-full">
     <Header title={title}></Header>
     <!-- Content -->
-    <p class="pb-2">&gt here you'll find all of my external profiles and existances!</p>
+    <p class="pb-2">&gt here you'll find all of my external profiles and existences!</p>
     <a href="https://github.com/akrossu" target="_blank">[ external:/github.com/akrossu ]</a>
     <p class="mb-2">&gt Where you can find all of my public coding projects</p>
     <h2>businessy:</h2>
