@@ -10,12 +10,20 @@
 
 /* --------------------- GLOBAL CSS --------------------- */
 
-h3, h2 {
+p, li, ul {
+    color: theme(colors.text);
+}
+
+h2, h3 {
     color: theme(colors.header);
 }
 
 a {
     color: theme(colors.link);
+}
+
+span {
+    color: theme(colors.accent);
 }
 
 img {
@@ -74,8 +82,29 @@ blockquote p {
 
 .home-desc,
 .hcb-icon,
-.hcb-comment-tb {
-    display: none;
+.hcb-comment-tb,
+.del,
+.hcb-icon,
+#hcb_subscribe,
+#hcb_settings {
+    display: none !important;
+}
+
+/* Make parent relative so absolute works */
+#comments_list div[id*='comment'] {
+    position: relative;
+}
+
+/* Move the delete button up */
+#comments_list div[id*='comment'] > b.del {
+    position: absolute;
+    top: -24px;       /* adjust to cover vertical space */
+    left: 0;          /* optional: adjust horizontal alignment */
+}
+
+/* Shift blockquote slightly down if needed */
+#comments_list div[id*='comment'] > blockquote {
+    margin-top: -24px; /* reduce extra spacing under delete button */
 }
 
 #hcb_form_name,
