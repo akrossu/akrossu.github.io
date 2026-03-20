@@ -6,6 +6,7 @@ export default {
       colors: {
         text:'var(--color-text)',
         header:'var(--color-header)',
+        accent:'var(--color-accent)',
         link:'var(--color-link)',
         border:'var(--color-border)'
       },
