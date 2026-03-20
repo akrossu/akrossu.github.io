@@ -1,1 +1,1 @@
-export const env={}
+export const env={"PUBLIC_LANYARD":"https://api.lanyard.rest/v1/users/282593436803268618"}
