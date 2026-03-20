@@ -1,46 +1,27 @@
+<script context="module">
+  // Module-level cache, persists across page reloads within the same session
+  export let cachedLanyard = null;
+</script>
+
 <script>
     import { onMount } from 'svelte';
+    import { lanyardStatus } from '$stores/lanyard.js';
 
     export let title = "";
     let pageTitle = ""; // why do i need dis i ponder to myself
-    
-    /* DISCORD STATUS */
-    const defaultImage = "https://cdn.discordapp.com/emojis/895005656086626415.gif";
-    const defaultStatus = "away from keyboard"
 
     let textStatus = "";
     let imageStatus = "";
 
     onMount(async () => {
-        fetch("https://api.lanyard.rest/v1/users/282593436803268618")
-        .then(response => response.json())
-        .then(data => {
-            if (data.data.discord_status == "offline") {
-                imageStatus = defaultImage;
-                textStatus = defaultStatus;
-                return;
-            }
- 
-            const activities = data.data.activities;
-            for(let i = 0; i < activities.length; i++) {
-                if (activities[i].name == "Custom Status") {
-                    if (activities[i].emoji.animated) {
-                        imageStatus = `https://cdn.discordapp.com/emojis/${data.data.activities[i].emoji.id}.gif`;
-                    }
-                    else {
-                        imageStatus = `https://cdn.discordapp.com/emojis/${data.data.activities[i].emoji.id}.png`;
-                    }
-                    textStatus = data.data.activities[0].state;
-                    if (textStatus == undefined) textStatus = "";
-                }
-                // Spotify listening to
-                if (activities[i].name == "Spotify") {
-                    try { songStatus = `${activities[i].state} - ${activities[i].details}`} catch(e) {}
-                }
-            }
-        }).catch(error => {
-            console.log(error);
-            return [];
+        lanyardStatus.update(status => {
+            if (status.textStatus) return status; // already fetched
+            fetch("https://api.akross.dev/lanyard")
+                .then(res => res.json())
+                .then(data => {
+                    lanyardStatus.set(data);
+                });
+            return status;
         });
     });
 
@@ -50,7 +31,11 @@
     const writeLoop = async () => {
         while (true) {
             await sleep(1000);
-            color = `color: #${Math.floor(Math.random()*16777215).toString(16)}`;
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+
+            color = `color: rgb(${r}, ${g}, ${b});`;
         }
     }
     writeLoop();
@@ -83,8 +68,8 @@
             <div class="md:h-[26px]">
                 <a class="inline-block md:hidden" href="/">../home</a>
                 <span class="pl-4">current status: </span>
-                <img class="inline w-8 h-auto" src="{imageStatus}" alt="">
-                <span class="normal-case">{textStatus}</span>
+                <img class="inline w-8 h-auto" src="{$lanyardStatus.imageStatus}" alt="">
+                <span class="normal-case">{$lanyardStatus.textStatus}</span>
             </div>
         </div>
         <nav class="block">
