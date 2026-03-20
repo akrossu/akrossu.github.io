@@ -1,5 +1,6 @@
 html[data-theme='default'] {
     --color-text: #8cff1a;
+    --color-accent: #8cff1a;
     --color-header: #8f7ff7;
     --color-link: #ff8052;
     --color-border: #8cff1a;
@@ -13,4 +14,18 @@ html[data-theme='default'] h2 {
 
 html[data-theme='default'] h3 {
     font-weight: 900;
+}
+
+/* ----------------------------------------------------- */
+
+html[data-theme='default'] .muted-border {
+    --tw-border-opacity: 0.5;
+    border-color: rgb(64 64 64 / var(--tw-border-opacity, 1)) /* #404040 */;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+html[data-theme='default'] .mica {
+    background-color: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(4px);
 }
