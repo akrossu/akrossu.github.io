@@ -29,14 +29,14 @@
     </div>
     <div class="px-8">
         <ul class="mb-4 list-none">
-            <li><h3>\\\ ᨐ creative corner ///</h3></li>
+            <li><h3 class="text-center">\\\ ᨐ creative corner ///</h3></li>
             <li><a href="/{pages.code}">[ /{pages.code} ]</a>{#if title == `${pages.code}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt coding projects</li>
             <li><a href="/{pages.imageboard}">[ /{pages.imageboard} ]</a>{#if title == `${pages.imageboard}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt monthly photography</li>
         </ul>
         <ul class="mb-4 list-none">
-            <li><h3>\\\ ᨐ digital garden ///</h3></li>
+            <li><h3 class="text-center">\\\ ᨐ digital garden ///</h3></li>
             <li><a href="/{pages.blog}">[ /{pages.blog} ]</a>{#if title == `${pages.blog}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt random writings</li>
             <li><a href="/{pages.gamelist}">[ /{pages.gamelist} ]</a>{#if title == `${pages.gamelist}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
@@ -45,7 +45,7 @@
             <li aria-label="page description">&gt favorite songs</li>
         </ul>
         <ul class="mb-4 list-none">
-            <li><h3>\\\ ᨐ information ///</h3></li>
+            <li><h3 class="text-center">\\\ ᨐ information ///</h3></li>
             <li><a href="/{pages.external}">[ /{pages.external} ]</a>{#if title == `${pages.external}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt cool websites</li>
             <li><a href="/{pages.about}">[ /{pages.about} ]</a>{#if title == `${pages.about}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
@@ -54,7 +54,7 @@
             <li aria-label="page description">&gt about this website</li>
         </ul>
         <ul class="mb-4 list-none">
-            <li><h3>\\\ ᨐ community ///</h3></li>
+            <li><h3 class="text-center">\\\ ᨐ community ///</h3></li>
             <li><a href="/{pages.webring}">[ /{pages.webring} ]</a>{#if title == `${pages.webring}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt web friends!</li>
             <li><a href="/{pages.guestbook}">[ /{pages.guestbook} ]</a>{#if title == `${pages.guestbook}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
