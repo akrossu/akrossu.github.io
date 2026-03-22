@@ -18,7 +18,7 @@
     <p class="mb-4">&gt Where you can find all of my public coding projects</p>
     <!-- Portfolio Website -->
     <div class="inline-flex">
-    <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/personal-website.png" alt="personal website">
+    <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/personal-website.webp" alt="personal website">
         <div>
             <h2>akrossu.github.io</h2>
             <p>&gt personal/portfolio website.</p>
@@ -37,25 +37,26 @@
     <div></div>
     <!-- Discord Theme -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/discord-theme.png" alt="discord theme">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/discord-theme.webp" alt="discord theme">
         <div>
             <h2>Simple and Clean</h2>
             <p>&gt A discord theme that takes advantage of the full app area.</p>
             <a class="block pb-2 ps-4" href="https://github.com/akrossu/SimpleAndClean" target="_blank">[ github:/simpleandclean ]</a>
-            <div class="inline-flex mb-8 ps-4"><Shield title="css" logo="css3" color="1572B6"></Shield></div>
+            <div class="inline-flex mb-8 ps-4">
+                <Shield title="css" logo="css" color="1572B6"></Shield>
+            </div>
         </div>
     </div>
-    <div></div>
     <!-- Kumiko -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/kumiko-discord.png" alt="Kumiko discord bot">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/kumiko-discord.webp" alt="Kumiko discord bot">
         <div>
             <h2>Kumiko Discord App</h2>
             <p>&gt An anime discord bot; without command bloat!</p>
             <div class="ps-4">
                 <p>live website: <a class="ps-4" href="https://kumiko.vercel.app/" target="_blank">[ external:/kumiko.app ]</a></p>
                 <p>github repository: <a class="ps-4" href="https://github.com/akrossu/kumiko-discord-bot" target="_blank">[ github:/kumiko-discord-bot ]</a></p>
-                <div class="inline-flex mb-8 mt-2">
+                <div class="inline-flex mb-8 ps-4">
                     <Shield title="javascript" logo="javascript"></Shield>
                 </div>
             </div>
@@ -64,13 +65,30 @@
     <div></div>
     <!-- taki mal api -->
     <div class="inline-flex">
-        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/taki-api.png" alt="taki my anime list api wrapper">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/taki-api.webp" alt="taki my anime list api wrapper">
         <div>
-            <h2>Taki-MAL-API-Wrapper</h2>
+            <h2>Taki MAL API Wrapper</h2>
             <p>&gt A Client Authorized My Anime List API Wrapper</p>
             <a class="block pb-2 ps-4" href="https:///github.com/akrossu/Taki-MAL-API-Wrapper" target="_blank">[ github:/Taki-MAL-API-Wrapper ]</a>
             <div class="inline-flex mb-8 ps-4">    
                 <Shield title="javascript" logo="javascript"></Shield>
+            </div>
+        </div>
+    </div>
+    <!-- hackathon stuffs -->
+    <div class="inline-flex">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/solar-jockey.jpg" alt="solar jockey">
+        <div>
+            <h2>Solar Jockey</h2>
+            <p>&gt A solar panel that optimally oriantates itself to the best position for energy capture.</p>
+            <div class="ps-4">
+                <p>github repository: <a class="pb-2 ps-4" href="https:///github.com/akrossu/solar-jockey" target="_blank">[ github:/solar-jockey ]</a></p>
+                <p>devpost project: <a class="pb-2 ps-4" href="https://devpost.com/software/solar-jockey" target="_blank">[ external:/devpost ]</a></p>
+                <div class="inline-flex mb-8">
+                    <Shield title="c" logo="c"></Shield>
+                    <div class="mx-2"></div>
+                    <Shield title="arduino" logo="arduino"></Shield>
+                </div>
             </div>
         </div>
     </div>
