@@ -1,5 +1,5 @@
 <script context="module">
-  // Module-level cache, persists across page reloads within the same session
+  // Cache: Persists across page reloads within same session
   export let cachedLanyard = null;
 </script>
 
