@@ -5,7 +5,7 @@
 
   const title = "music-list";
 
-  const API_BASE = "https://api.akross.dev/lastfm"; // your worker endpoint
+  const API_BASE = "https://api.akross.dev/lastfm";
 
   let loadingEl;
   let curListening;
@@ -30,8 +30,8 @@
     nowPlayingEl = document.getElementById('nowPlayingNone');
 
     fetchNowPlaying();
-    getTopTracks('overall');
-    getTopArtists('overall');
+    getTopTracks('7day');
+    getTopArtists('7day');
 
     startPolling(120000); // update every 2 minutes
   });
