@@ -1,18 +1,17 @@
 <script>
     import { onMount } from 'svelte';
-    import SvelteMarkdown from 'svelte-markdown';
+    import { marked } from 'marked';
     import Header from '$components/header.svelte';
     import Sidebar from '$components/sidebar.svelte';
 
     const title = "blog"
 
     let fileNames = [];
-
     let blogTitles = [];
     let blogDates = [];
     let blogModifiedDates = [];
 
-    let blogContent = [];
+    let blogContent = $state([]);
 
     onMount(async () => {
         // Fetch file names
@@ -24,16 +23,15 @@
                 blogTitles.push(element.title);
                 blogDates.push(element.date);
                 blogModifiedDates.push(element.modifiedDate);
-                console.log(element.title + ": " + element.modifiedDate);
             });
         });
         
-        // For each file name, 
+        // For each file name
         for(let i = 0; i < fileNames.length; i++) {
             fetch(`https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/blog-posts/${fileNames[i]}.md`)
             .then(response => response.text())
             .then(data => {
-                blogContent[i] = data.toString();
+                blogContent[i] = marked.parse(data);
             });
         }
     });
@@ -53,7 +51,7 @@
                 <h2 class="inline-block ps-2 align-sub">title: "{blogTitles[index]}"</h2>
                 <h2 class="ms-6 align-sub">date: "{blogDates[index]}"</h2>
             </summary>
-            <SvelteMarkdown source={post}/>
+            <div>{@html post}</div>
             {#if blogModifiedDates[index] != undefined}
                 <p class="mt-4">updated: {blogModifiedDates[index]}</p>
             {/if}

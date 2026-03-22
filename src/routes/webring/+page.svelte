@@ -2,7 +2,7 @@
     import Header from '$components/header.svelte';
     import Sidebar from '$components/sidebar.svelte';
 
-    let showCopyNotification = true;
+    let showCopyNotification = $state(true);
     const title = 'webring';
     const buttonElement = '<a href="https://akrossu.github.io"><img src="https://raw.githubusercontent.com/akrossu/akrossu.github.io/projectA/static/assets/webring/akross.gif" alt="akross stamp"></a>'
 
@@ -21,7 +21,7 @@
     <Header title={title}></Header>
     <!-- Content -->
     <p class="flex items-center">
-        <button class="inline-flex" on:click={copy}>
+        <button class="inline-flex" onclick={copy}>
             <img src="/assets/webring/akross.gif" alt="akross stamp" loading="lazy">
         </button>&nbsp;&gt This is my stamp!! o(≧∇≦o)
     </p>

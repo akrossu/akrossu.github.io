@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 :root {
     --font-size: 13px;
@@ -8,22 +6,66 @@
     --content-max-width: 675px;
 }
 
+@theme inline {
+    --color-text: var(--text);
+    --color-accent: var(--accent);
+    --color-header: var(--header);
+    --color-link: var(--link);
+    --color-border: var(--border);
+}
+
+@layer base {
+    :root {
+        --text: #8cff1a;
+        --accent: #8cff1a;
+        --header: #8f7ff7;
+        --link: #ff8052;
+        --border: #8cff1a;
+    }
+}
+
 /* --------------------- GLOBAL CSS --------------------- */
+@layer components {
+    html, p, li, ul {
+        @apply text-text;
+    }
+    
+    h2, h3 {
+        @apply text-header;
+    }
+    
+    a {
+        @apply text-link;
+    }
+    
+    span {
+        @apply text-accent;
+    }
 
-p, li, ul {
-    color: theme(colors.text);
+    button {
+        @apply text-link;
+    }
 }
 
-h2, h3 {
-    color: theme(colors.header);
+[data-theme="orange"] {
+    --text: #FAF3E1;
+    --header: #F5E7C6;
+    --link: #ff8052;
+    --border: #e0966e;
 }
 
-a {
-    color: theme(colors.link);
+[data-theme="purple"] {
+    --text: #ffffff;
+    --header: #480083;
+    --link: #6f00ca;
+    --border: #ae5cdd;
 }
 
-span {
-    color: theme(colors.accent);
+[data-theme="green"] {
+    --text: #ffffff;
+    --header: #E2E2B6;
+    --link: #6EACDA;
+    --border: #E2E2B6;
 }
 
 img {
@@ -40,7 +82,6 @@ code {
 
 html {
     font-family: monospace;
-    color: theme(colors.text);
     font-size: var(--font-size);
     background-color: black;
     overflow-y: auto;
