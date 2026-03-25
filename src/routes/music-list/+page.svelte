@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: Cannot assign to constant -->
 <script>
   import { onMount } from 'svelte';
   import Header from '$components/header.svelte';
@@ -11,8 +12,8 @@
   let curListening;
   let nowPlayingEl;
 
-  let songSelected = 'all-time';
-  let artistSelected = 'all-time';
+  let songSelected = 'week';
+  let artistSelected = 'week';
 
   let songTitle = '';
   let songArtist = '';
@@ -178,7 +179,7 @@
     {#each songsArr as song, i}
       <div class="px-4 my-3 w-full inline-flex">
         <div class="mr-auto">
-          <span class="inline-block w-9">{++i}</span>
+          <span class="inline-block w-9">{i+1}</span>
           <span class="inline-block align-middle">
             <a href={song.url} target="_blank">{song.name}</a>
             <p>{song.artist}</p>
@@ -204,7 +205,7 @@
     {#each artistsArr as artist, i}
       <div class="px-4 my-4 w-full inline-flex">
         <div class="mr-auto">
-          <span class="inline-block w-9">{++i}</span>
+          <span class="inline-block w-9">{i+1}</span>
           <span class="inline-block align-middle">
             <a href={artist.url} target="_blank">{artist.name}</a>
           </span>

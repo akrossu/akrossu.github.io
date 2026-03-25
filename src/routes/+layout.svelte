@@ -3,6 +3,8 @@
     import "$lib/style/default.css"
     import "$lib/style/monochromatic.css"
     import "$lib/style/CUSTOM.css"
+    /** @type {{children?: import('svelte').Snippet}} */
+    let { children } = $props();
 </script>
 
-<slot />
+{@render children?.()}

@@ -1,5 +1,6 @@
 <script>
-    export let title = "";
+    /** @type {{title?: string}} */
+    let { title = "" } = $props();
 
     // move this so header can use it too
     const pages = {

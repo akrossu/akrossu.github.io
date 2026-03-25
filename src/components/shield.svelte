@@ -1,7 +1,6 @@
 <script>
-    export let title = "";
-    export let logo = "";
-    export let color = "";
+    /** @type {{title?: string, logo?: string, color?: string}} */
+    let { title = "", logo = "", color = "" } = $props();
 </script>
 
 {#if title != 'java'}

@@ -7,10 +7,10 @@
 
     const title = 'photo-wall';
     
-	let active = false;
-    let modalImage;
+	let active = $state(false);
+    let modalImage = $state();
 
-    let images = [];
+    let images = $state([]);
     let dir;
     let src;
 
@@ -52,7 +52,7 @@
     {/each}
     <div class:active={active} class="fixed hidden z-10 w-full h-full overflow-auto bg-black bg-opacity-60 left-0 top-0">
         {#if modalImage != undefined}
-        <button class="absolute top-0 left-0 w-full h-full" aria-label="close" on:click={() => {active = !active}}>
+        <button class="absolute top-0 left-0 w-full h-full" aria-label="close" onclick={() => {active = !active}}>
             <span class="absolute md:hidden right-0 top-0 mr-4 p-4">X</span>
         </button>
         <img class="m-auto relative block w-[80%] max-w-content mt-8" src="/assets/imageboard/august/{modalImage}" alt="">
