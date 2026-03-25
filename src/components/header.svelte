@@ -47,11 +47,11 @@
 
 <div class="block relative mb-8">
     <div class="flex">
-        <div class="hidden md:block w-25 relative">
-            <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="">
+        <div class="hidden md:block w-[100px] relative">
+            <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="" draggable="false">
         </div>
         <div class="flex-1">
-            <div class="ps-4 md:h-15">
+            <div class="ps-4 md:h-[60px]">
                 <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>
                     [ Home@akross:/{title} ]
                     <button class="inline" onclick={() => showThemes = !showThemes}>
