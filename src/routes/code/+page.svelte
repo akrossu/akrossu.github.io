@@ -92,4 +92,22 @@
             </div>
         </div>
     </div>
+    <div class="inline-flex">
+        <img class="mr-8 w-28 h-28 object-cover border-border border-2" src="/assets/code/Aurelient.webp" alt="solar jockey">
+        <div>
+            <h2>Aurelient</h2>
+            <p>&gt Energy-aware AI platform that lets users control model effort to reduce compute waste.</p>
+            <div class="ps-4">
+                <p>github repository: <a class="pb-2 ps-4" href="https://github.com/akrossu/Aurelient" target="_blank">[ github:/solar-jockey ]</a></p>
+                <p>devpost project: <a class="pb-2 ps-4" href="https://devpost.com/software/aurelient" target="_blank">[ external:/devpost ]</a></p>
+                <div class="inline-flex mb-8">
+                    <Shield title="react" logo="react"></Shield>
+                    <div class="mx-2"></div>
+                    <Shield title="tailwindcss" logo="tailwindcss"></Shield>
+                    <div class="mx-2"></div>
+                    <Shield title="TypeScript" logo="TypeScript"></Shield>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
