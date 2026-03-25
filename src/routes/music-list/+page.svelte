@@ -12,8 +12,8 @@
   let curListening;
   let nowPlayingEl;
 
-  let songSelected = 'all-time';
-  let artistSelected = 'all-time';
+  let songSelected = 'week';
+  let artistSelected = 'week';
 
   let songTitle = '';
   let songArtist = '';
