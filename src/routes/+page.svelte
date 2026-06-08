@@ -12,7 +12,7 @@
     <title>[ home@akross:/ ]</title>
 </svelte:head>
 
-<div data-theme="{$theme}" class="flex">
+<div data-theme="{$theme}" class="flex w-full">
     <Sidebar title={title}></Sidebar>
     <div class="max-w-content w-full">
         <Header></Header>

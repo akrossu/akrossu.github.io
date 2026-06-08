@@ -21,7 +21,7 @@
     };
 </script>
 
-<div class="w-72 mr-16 hidden md:block min-w-fit muted-border mica h-auto">
+<div class="w-72 mr-16 hidden md:block min-w-fit h-auto">
     <div class="px-8 text-center ">
         <div class="flex justify-center mb-4">
             <img class="w-24" src="/assets/iconcat.gif" alt="">

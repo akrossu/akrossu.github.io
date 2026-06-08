@@ -45,13 +45,13 @@
     writeLoop();
 </script>
 
-<div class="block relative mb-8">
+<div class="block relative mb-8 max-w-200">
     <div class="flex">
-        <div class="hidden md:block w-[100px] relative">
+        <div class="hidden md:block w-30 relative">
             <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="" draggable="false">
         </div>
         <div class="flex-1">
-            <div class="ps-4 md:h-[60px]">
+            <div class="ps-4 md:h-18">
                 <h1 class="text-2xl md:text-3xl" bind:this={pageTitle}>
                     [ Home@akross:/{title} ]
                     <button class="inline" onclick={() => showThemes = !showThemes}>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <nav class="block">
-                <ul class="underline-links flex flex-1 justify-evenly py-2 max-w-nav
+                <ul class="underline-links flex flex-1 justify-evenly py-2 max-w-nav mica
                             text-lg font-bold border-border border-solid border-2 md:border-l-0">
                     <li class="hidden md:inline"><a href="/">home</a></li>
                     <div class="hidden md:inline border-border border-solid border-l-2"></div>

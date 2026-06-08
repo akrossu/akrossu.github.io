@@ -17,8 +17,8 @@
     
     <h2 class="mt-4">what i'm playing</h2>
     <div class="ps-4">
-        <p>&gt current: ?</p>
-        <p>&gt secondary: Minecraft always and forever &gt;:3</p>
+        <p>&gt current: Halo The Master Chief Collection (CE to 4)</p>
+        <p>&gt secondary: Vintage Story</p>
     </div>
 
     <h2 class="mt-4">Plan to play games</h2>
