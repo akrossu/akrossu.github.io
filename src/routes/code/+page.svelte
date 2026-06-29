@@ -98,7 +98,7 @@
             <h2>Aurelient</h2>
             <p>&gt Energy-aware AI platform that lets users control model effort to reduce compute waste.</p>
             <div class="ps-4">
-                <p>github repository: <a class="pb-2 ps-4" href="https://github.com/akrossu/Aurelient" target="_blank">[ github:/solar-jockey ]</a></p>
+                <p>github repository: <a class="pb-2 ps-4" href="https://github.com/akrossu/Aurelient" target="_blank">[ github:/aurelient ]</a></p>
                 <p>devpost project: <a class="pb-2 ps-4" href="https://devpost.com/software/aurelient" target="_blank">[ external:/devpost ]</a></p>
                 <div class="inline-flex mb-8">
                     <Shield title="react" logo="react"></Shield>
