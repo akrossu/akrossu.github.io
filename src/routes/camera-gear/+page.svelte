@@ -13,5 +13,5 @@
 
 <div class="max-w-content w-full">
     <Header title={title}></Header>
-    <span>here's my content</span>
+    <span>i haven't added anything here yet :(</span>
 </div>
