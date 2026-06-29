@@ -22,8 +22,11 @@
         <!-- TODO: ADD UPDATE SECTION -->
 
         <h2 class="mt-4">about:</h2>
-        <p>&gt hii! i'm a software engineering student based in northern virginia.</p>
-        <p>&gt Mostly full-stack web development but graphics programming is pretty cool too :3</p>
+        <p>&gt hii! i'm a computer science student from northern virginia. I mostly work with full-stack web development and software development, but games programming is pretty cool too</p>
+
+        <br>
+        <p>&gt I enjoy posting creative things and playing a lot of games and listening to an absurd amount of music :3</p>
+        <br>
 
         <div class="mt-4"></div>
         <h3 class="inline">// some of the technologies I use; the rest can be found in&nbsp</h3><a href="/about">[ akross:/about ]</a>
@@ -50,6 +53,6 @@
 
         <!-- <p>&gt This project is what happens when portoflio and personal websites from the early netscape collide.</p> -->
         <!-- <a class="" href="https://discord.com/users/282593436803268618"><img class="border-2 border-[#8cff1a] border-solid" src="https://lanyard.cnrad.dev/api/282593436803268618?bg=:00000000" alt="discord activity"></a> -->
-        <p class="my-8 pb-16">&gt This wonderful web design was made by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/assets/webring/insect.gif" alt="insect.christmas" draggable="false"></a></p>
+        <p class="my-8 pb-16">&gt This wonderful web design was inspired by <a href="https://insect.christmas" target="_blank">Aztrosist <img class="inline-block" src="/assets/webring/insect.gif" alt="insect.christmas" draggable="false"></a></p>
     </div>
 </div>
