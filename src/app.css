@@ -206,6 +206,10 @@ blockquote p {
     padding-left: 1rem;
 }
 
+#comments_list .author-name {
+    color: white !important;
+}
+
 /* SIDEBAR */
 /* #sidebar-border::before, #sidebar-border::after {
     content: '';
