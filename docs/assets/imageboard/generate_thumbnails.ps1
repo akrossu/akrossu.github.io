@@ -24,7 +24,7 @@ foreach ($image in $images) {
 
     magick $image.FullName `
         -auto-orient `
-        -resize "400x400>" `
+        -resize "484x484>" `
         -quality 80 `
         $output
 }
