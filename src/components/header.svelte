@@ -48,7 +48,7 @@
 <div class="block relative mb-8 max-w-200">
     <div class="flex">
         <div class="hidden md:block w-30 relative">
-            <img class="border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="" draggable="false">
+            <img class="pixel-img border-border border-solid border-2 absolute w-full h-full" src="/assets/earth.gif" alt="" draggable="false">
         </div>
         <div class="flex-1">
             <div class="ps-4 md:h-18">
@@ -73,7 +73,7 @@
                 <div class="md:h-6.5">
                     <a class="inline-block md:hidden" href="/">../home</a>
                     <span class="pl-4">current status: </span>
-                    <img class="inline w-8 h-auto" src="{$lanyardStatus.imageStatus}" alt="">
+                    <img class="pixel-img inline w-8 h-auto" src="{$lanyardStatus.imageStatus}" alt="">
                     <span class="normal-case">{$lanyardStatus.textStatus}</span>
                 </div>
             </div>

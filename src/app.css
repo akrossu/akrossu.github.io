@@ -68,10 +68,6 @@
     --border: #E2E2B6;
 }
 
-img {
-    image-rendering:crisp-edges;
-}
-
 hr {
     display: none;
 }
@@ -107,6 +103,18 @@ blockquote p {
 
 .underline-links a {
     text-decoration: underline;
+}
+
+.pixel-img {
+    image-rendering: crisp-edges;
+}
+
+.photo-thumbnail {
+    image-rendering: optimizeSpeed;
+}
+
+.photo-full {
+    image-rendering: optimizeQuality;
 }
 
 /* -------------- FORUM ------------- */

@@ -24,7 +24,7 @@
 <div class="w-72 mr-16 hidden md:block min-w-fit h-auto">
     <div class="px-8 text-center ">
         <div class="flex justify-center mb-4">
-            <img class="w-24" src="/assets/iconcat.gif" alt="">
+            <img class="pixel-img w-24" src="/assets/iconcat.gif" alt="">
         </div>
         <h2 class="mb-8 text-lg font-bold">website directory:</h2>
     </div>
