@@ -1,0 +1,1 @@
+import{x as e,y as t}from"../chunks/DUd-ATcW.js";import"../chunks/AZeLEXKw.js";import"../chunks/BukPvVYA.js";var n=e(`<span>oh no, you got lost :( that's okie return <a href="./">home</a></span>`);function r(e){t(e,n())}export{r as component};

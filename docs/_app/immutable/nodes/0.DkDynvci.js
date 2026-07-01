@@ -1,1 +1,0 @@
-import{$ as e,L as t,b as n,et as r,p as i,y as a}from"../chunks/Cz-WR66v.js";import"../chunks/ibwe1TAv.js";var o=r({prerender:()=>!0,trailingSlash:()=>s}),s=`always`;function c(r,o){var s=n();i(t(s),()=>o.children??e),a(r,s)}export{c as component,o as universal};

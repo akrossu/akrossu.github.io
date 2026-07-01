@@ -1,0 +1,1 @@
+import{$ as e,D as t,I as n,J as r,Q as i,T as a,U as o,i as s,p as c,q as l,w as u,x as d,y as f}from"./DUd-ATcW.js";var p=d(`<button><!></button>`);function m(u,d){r(d,!0);let m=s();var h=p(),g=o(()=>m(`click`));c(n(h),()=>d.children??e),i(h),a(`click`,h,function(...e){t(g)?.apply(this,e)}),f(u,h),l()}u([`click`]);export{m as t};
