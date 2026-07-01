@@ -23,4 +23,8 @@
     <h2 class="mt-4 inline-flex">photo-wall:</h2>
     <a href="/photo-wall">[ akross:/photo-wall ]</a>
     <p>&gt all the small moments I try to keep as a reminder to be appreciative of our time here.</p>
+
+    <h2 class="mt-4 inline-flex">photo-journey:</h2>
+    <a href="/photo-journey">[ akross:/photo-journey ]</a>
+    <p>&gt a dialogue of pictures taken by me and a friend half way across the world.</p>
 </div>

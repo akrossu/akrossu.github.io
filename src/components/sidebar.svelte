@@ -17,7 +17,8 @@
         lore:'lore',
         webring:'webring',
         guestbook: 'guestbook',
-        imageboard: 'photo-wall'
+        photowall: 'photo-wall',
+        photojourney: 'photo-journey'
     };
 </script>
 
@@ -33,8 +34,10 @@
             <li><h3 class="text-center">\\\ ᨐ creative corner ///</h3></li>
             <li><a href="/{pages.code}">[ /{pages.code} ]</a>{#if title == `${pages.code}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt coding projects</li>
-            <li><a href="/{pages.imageboard}">[ /{pages.imageboard} ]</a>{#if title == `${pages.imageboard}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
+            <li><a href="/{pages.photowall}">[ /{pages.photowall} ]</a>{#if title == `${pages.photowall}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
             <li aria-label="page description">&gt monthly photography</li>
+            <li><a href="/{pages.photojourney}">[ /{pages.photojourney} ]</a>{#if title == `${pages.photojourney}`}<span class='inline-block'>&nbsp&lt---</span>{/if}</li>
+            <li aria-label="page description">&gt a photography dialogue</li>
         </ul>
         <ul class="mb-4 list-none">
             <li><h3 class="text-center">\\\ ᨐ digital garden ///</h3></li>
