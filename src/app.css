@@ -99,6 +99,10 @@ blockquote p {
     display: inline;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* ------------ Classes ------------ */
 
 .underline-links a {
